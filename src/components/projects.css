@@ -1,0 +1,49 @@
+@import "../index.css";
+
+.project {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    color: var(--text-dark);
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    width: 85%;
+    height: 300px;
+    /* border-radius: 25px;
+    border: 2px solid #F87C56;
+    background-color: var(--text-light);
+    filter: drop-shadow(5px 5px 10px #747474);
+    backdrop-filter: blur(10px); */
+}
+
+.project-left{
+    display: flex;
+    width: 30%;
+    align-content: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+}
+
+.project-icon {
+    width: 100%;
+    margin: auto;
+}
+
+.project-right{
+    width: 70%;
+    padding-left: 20px;
+    text-align: left;
+    text-justify: top;
+    /* background-color: rgb(221, 255, 0); */
+}
+
+.project-name {
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-dark);
+}
+
+hr{
+    border: 2px solid #1F271B;
+}

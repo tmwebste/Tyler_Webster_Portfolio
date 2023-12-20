@@ -1,0 +1,54 @@
+.smiley-face {
+    position: fixed;
+    left: 90%;
+    top: 10%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    
+    overflow: hidden;
+}
+
+.eyes {
+    position: absolute;
+    top:25%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+}
+
+.eye {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.left{
+    left: 90%;
+}
+
+.right{
+    left: 100%;
+}
+
+.pupil {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.mouth {
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 50% 50%;
+}

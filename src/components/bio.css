@@ -1,0 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/share-tech-mono');
+@import "../index.css";
+
+#bio{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    /* z-index: 3; */
+}
+
+.bio-left {
+    position: relative;
+    /* z-index: 4; */
+    width: 40%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.bio-right {
+    position: relative;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    padding-right: 10%;
+    text-align: left;
+    text-justify: left;
+    padding-top: 3%;
+    z-index: 3;
+    /* background-color: #1F271B; */
+    
+}
+
+#tagline {
+    color: #1F271B;
+    /* font-family: 'Share Tech Mono', sans-serif; */
+    font-size: 3.0rem;
+}
+
+#headshot {
+    position: relative;
+    z-index: 4;
+    width: 30%;
+    opacity: 100%;
+    padding: 0;
+    margin: 0;
+    filter: blur(0.1px);
+    pointer-events: none;
+    filter: drop-shadow(20px -20px #F87C56);
+}
+
