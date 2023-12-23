@@ -88,13 +88,7 @@ function Home() {
                 </div>
 
                 <div className="vertical-text">
-                    <h2>Tyler Webster-2023-
-                        <a className="social-link" href="mailto: TylerMichaelWebster@gmail.com">Email</a>
-                        -
-                        <a className="social-link" href="https://www.linkedin.com/in/tylermwebster" target="_blank">Linkedin</a>
-                        -
-                        <a className="social-link" href="https://github.com/tmwebste" target="_blank">GitHub</a>
-                    </h2>
+                    <h2>Tyler Webster-2023</h2>
                 </div>
                 <div id='bio-start' className='section-divider'></div>
                 <Bio></Bio>

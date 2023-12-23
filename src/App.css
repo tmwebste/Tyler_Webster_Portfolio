@@ -3,7 +3,7 @@
 #root {
   width: 100dvw;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
   background-color: var(--background);
 }
@@ -38,12 +38,10 @@ body {
 }
 
 #skills-start{
-
   background-color: red;
 }
 
 #projects-start{
- 
   background-color: red;
 }
 
@@ -51,27 +49,18 @@ body {
   display: flex;
   justify-content: flex-start; /* Aligns columns closer */
   margin-right: 10px;
+  padding: 0;
+  margin: 0;
 }
 
-.left-column {
-  position: absolute;
-  left: 0%;
-  top: 25%;
-  z-index: 2;
-}
-
-.right-column {
-  position: absolute;
-  left: 0%;
-  top: 52%;
-}
 
 .vertical-text {
   position: fixed;
   font-size: large;
   z-index: 4;
   color: var(--text-light);
-  left: 94%;
+  right: -20px;
+  bottom: 20px;
   writing-mode: vertical-rl; /* vertical writing mode from right to left */
   text-orientation: mixed; /* allows the text to flow in vertical direction */
   white-space: nowrap; /* prevents text from wrapping horizontally */
@@ -82,9 +71,7 @@ body {
   color: var(--text-light);
 }
 
-.social-link:hover{
-  color: #E0479E;
-}
+
 
 .vertical-text-normal {
   writing-mode: vertical-rl; /* Vertical writing mode from right to left */
@@ -104,7 +91,23 @@ body {
   font-size: 2.5rem;
   font-family: 'Zen Tokyo Zoo';
   font-weight: 400;
+  padding: 0;
+  margin: 0;
   
+}
+
+
+.left-column {
+  position: absolute;
+  left: 0%;
+  top: 100px;
+  z-index: 2;
+}
+
+.right-column {
+  position: absolute;
+  left: 0%;
+  top: 400px;
 }
 
 .vertical-text-normal p span {
@@ -115,7 +118,7 @@ body {
 
 .section-label {
   position: absolute;
-  left: -2%;
+  left: -80px;
   top: 70px;
   z-index: 2;
   color: var(--text-light);

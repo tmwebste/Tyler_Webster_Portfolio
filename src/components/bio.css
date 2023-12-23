@@ -42,12 +42,30 @@
 #headshot {
     position: relative;
     z-index: 4;
-    width: 30%;
+    width: 200px;
     opacity: 100%;
     padding: 0;
     margin: 0;
     filter: blur(0.1px);
     pointer-events: none;
     filter: drop-shadow(20px -20px #F87C56);
+}
+
+@media screen and (max-width: 1000px) {
+    #bio {
+        flex-direction: column; /* Adjust font size for smaller screens */
+        margin-left: 100px;
+    }
+
+    .bio-right {
+        padding-right: 0px;
+
+    }
+
+    #tagline {
+        font-size: 1.5rem;
+    }
+
+
 }
 

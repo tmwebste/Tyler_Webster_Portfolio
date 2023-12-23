@@ -36,8 +36,13 @@
     word-wrap: break-word;
 }
 
-
-
 hr{
     border: 2px solid #1F271B;
+}
+
+@media screen and (max-width: 1000px) {
+    #skill-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(4, 1fr); /* 4 rows */
+    }
 }
