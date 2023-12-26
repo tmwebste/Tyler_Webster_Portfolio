@@ -11,6 +11,7 @@ class Bio extends Component {
 
     render() {
         return (
+            
             <div id='bio'>
                 <div className='bio-left'>
                     <img id='headshot' src={profileImage3} alt='profile photo' />
