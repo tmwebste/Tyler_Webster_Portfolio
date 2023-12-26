@@ -7,18 +7,18 @@
     margin: auto;
     margin-top: 50px;
     padding: 0px;
-    width: 85%;
+    width: 50%;
     
     /* background-color: blue; */
 }
 
 .job-left{
-    width: 30%;
+    width: 0%;
     /* background-color: blueviolet; */
 }
 
 .job-right{
-    width: 70%;
+    width: 100%;
     padding-left: 20px;
     text-align: left;
     text-justify: top;
@@ -32,5 +32,5 @@
 }
 
 hr{
-    border: 2px solid #1F271B;
+    border: 2px solid var(--text-dark);
 }

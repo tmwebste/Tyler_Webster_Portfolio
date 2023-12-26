@@ -13,9 +13,14 @@ function Home() {
     const [projectDetails, setProjectDetails] = useState({
         mystery:{
             name:'OpenAI Powered Murder Mystery Game',
-            tagLine:'test',
+            tagLine:'Dynamically generating game scenarios and character responses via Open AI.',
             image:AIMystery
         },
+        hapticGlove:{
+            name:'Haptic Glove For Physical Therapy',
+            tagLine:'Improving activty learning and adhesion through continuous haptic feed-back and feed-forward.',
+            image:AIMystery
+        }
     });
 
     const [jobDetails, setJobDetails] = useState({
@@ -88,7 +93,7 @@ function Home() {
                 </div>
 
                 <div className="vertical-text">
-                    <h2>Tyler Webster-2023</h2>
+                    <h2>Tyler Webster-2024</h2>
                 </div>
                 <div id='bio-start' className='section-divider'></div>
                 <Bio></Bio>
@@ -100,7 +105,7 @@ function Home() {
                 <Work jobs={jobDetails}></Work>
 
             </div>
-            <img id='bg-accent' src={BGAccent} alt="Background Acceent" />
+            {/* <img id='bg-accent' src={BGAccent} alt="Background Acceent" /> */}
         </>
     )
 }

@@ -24,8 +24,8 @@ class Projects extends Component {
                     </div>
                 </div>
                 <section id='projects-grid'>
-                    <Project projectName={this.props.projects.mystery.name} projectIcon={this.props.projects.mystery.image}></Project>
-                    <Project projectName="Custom Wearable Liquid Metal Flex Sensor"></Project>
+                    <Project projectName={this.props.projects.mystery.name} projectIcon={this.props.projects.mystery.image} tagLine={this.props.projects.mystery.tagLine}></Project>
+                    <Project projectName={this.props.projects.hapticGlove.name} projectIcon={this.props.projects.hapticGlove.image} tagLine={this.props.projects.hapticGlove.tagLine}></Project>
                     <Project projectName="Open Source Mechanical Macropad"></Project>
                     <Project projectName="Weather Resistant Enivironmental Sensor Network For Realtime Agricultural Monitoring"></Project>
                 </section>

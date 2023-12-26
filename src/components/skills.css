@@ -16,19 +16,19 @@
 }
 
 .skill-name {
-    color: #1F271B;
+    color: var(--text-dark);
 }
 
 .skill-icon{
     width: 50px;
-    fill: #1F271B;
+    fill: var(--text-dark);
 }
 
 .section-header {
     flex: 1; /* Equal distribution of menu items */
     height: 2.25rem;
     text-align: center;
-    color: #1F271B;
+    color: var(--text-dark);
     font-size: 2.5rem;
     font-family: 'Zen Tokyo Zoo';
     font-weight: 400;
@@ -37,7 +37,7 @@
 }
 
 hr{
-    border: 2px solid #1F271B;
+    border: 2px solid var(--text-dark);
 }
 
 @media screen and (max-width: 1000px) {

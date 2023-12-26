@@ -8,8 +8,9 @@
   /* background-color: #74546A; */
   
 
-  --background:#71816D;
+  /* --background:#71816D; */
   /* --background: #0081AF; */
+  --background: #3D7A9E;
   --text-dark:#1F271B;
   --text-light:#ECE4B7;
   background-color: var(--background);

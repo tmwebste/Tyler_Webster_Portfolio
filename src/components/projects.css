@@ -1,16 +1,25 @@
 @import "../index.css";
 
+#projects-grid {
+    display: grid;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 10px; /* Adjust as needed for spacing between items */
+}
+
 .project {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-sizing: border-box;
     padding: 10px;
     color: var(--text-dark);
     margin: auto;
     margin-top: 50px;
     padding: 10px;
-    width: 85%;
-    height: 300px;
+    width: 100%;
+    /* height:150px; */
     /* border-radius: 25px;
     border: 2px solid #F87C56;
     background-color: var(--text-light);
@@ -18,11 +27,13 @@
     backdrop-filter: blur(10px); */
 }
 
-.project-left{
+.project-top{
     display: flex;
-    width: 30%;
+    width: 100%;
     align-content: center;
     justify-content: center;
+    margin: 0%;
+    padding: 0%;
     /* background-color: blueviolet; */
 }
 
@@ -31,9 +42,9 @@
     margin: auto;
 }
 
-.project-right{
-    width: 70%;
-    padding-left: 20px;
+.project-bottom{
+    width: 100%;
+    padding-left: 0upx;
     text-align: left;
     text-justify: top;
     /* background-color: rgb(221, 255, 0); */
@@ -46,7 +57,7 @@
 }
 
 hr{
-    border: 2px solid #1F271B;
+    border: 2px solid var(--text-dark);
 }
 
 @media screen and (max-width: 1000px) {
@@ -55,14 +66,19 @@ hr{
         
     }
 
+    #projects-grid {
+        grid-template-columns: repeat(1, 1fr); /* 4 columns */
+        grid-template-rows: repeat(4, 1fr); /* 2 rows */
+    }
+
     .project-left{
-        width: 100%;
+        
         padding-left: 0px;
         margin-left: 0px;
     }
 
     .project-right {
-        width: 100%;
+        
         padding-left: 0px;
         margin-left: 0px;
         font-size: 0.50rem;
