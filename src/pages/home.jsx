@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Bio from '../components/bio'
 import Projects from '../components/projects'
 import NavBar from '../components/navBar'
+import Footer from '../components/footer'
 import Skills from '../components/skills'
 import Work from '../components/work'
 import BGAccent from '../assets/Vector_BG.svg'
@@ -11,16 +12,34 @@ import AIMystery from '../assets/AI_Mystery.png'
 function Home() {
 
     const [projectDetails, setProjectDetails] = useState({
-        mystery:{
-            name:'OpenAI Powered Murder Mystery Game',
-            tagLine:'Dynamically generating game scenarios and character responses via Open AI.',
-            image:AIMystery
+        mystery: {
+            name: 'OpenAI Powered Murder Mystery Game',
+            tagLine: 'Dynamically generating game scenarios and character responses via Open AI.',
+            image: AIMystery,
+            expanded: false,
+            details: {
+
+            }
         },
-        hapticGlove:{
-            name:'Haptic Glove For Physical Therapy',
-            tagLine:'Improving activty learning and adhesion through continuous haptic feed-back and feed-forward.',
-            image:AIMystery
+        hapticGlove: {
+            name: 'Haptic Glove For Physical Therapy',
+            tagLine: 'Improving activity learning and adhesion through continuous haptic feed-back and feed-forward.',
+            image: AIMystery,
+            expanded: false
+        },
+        macrowPad: {
+            name: 'Open Source Mechanical Macropad',
+            tagLine: 'Custom macro pad designed to improve desktop productivity',
+            image: AIMystery,
+            expanded: false
+        },
+        vineyard: {
+            name: "Weather Resistant Enivironmental Sensor Network For Realtime Agricultural Monitoring",
+            tagLine: 'Distributed network of temperature sensors for monitoring temperatures across vinyards and displaying them to the user in real time.',
+            image: AIMystery,
+            expanded: false
         }
+
     });
 
     const [jobDetails, setJobDetails] = useState({
@@ -60,53 +79,31 @@ function Home() {
         eniware: {
             jobTitle: "Engineering Intern",
             companyName: "Eniware, Portable Sterilization - Bethesda, MD",
-            employmentPeriod: "May 2017 - July 2017", 
+            employmentPeriod: "May 2017 - July 2017",
             jobBulletPoints: [
                 "Generated prototype renderings for presentation and display",
                 "Assisted lead engineer to develop a portable surgical equipment sterilizer",
                 "Collaborated with chemists to optimize internal layout for sterilization processes",
             ],
         },
+
+
+
     });
 
     return (
-        <>
+        <div className='main'>
             <NavBar></NavBar>
-            <div className='main'>
-                <div className="vertical-container">
-                    <div className="vertical-text-normal left-column">
-                        <p>T</p>
-                        <p>Y</p>
-                        <p>L</p>
-                        <p>E</p>
-                        <p>R</p>
-                    </div>
-                    <div className="vertical-text-normal right-column">
-                        <p>W</p>
-                        <p>E</p>
-                        <p>B</p>
-                        <p>S</p>
-                        <p>T</p>
-                        <p>E</p>
-                        <p>R</p>
-                    </div>
-                </div>
-
-                <div className="vertical-text">
+            {/* <div className="vertical-text">
                     <h2>Tyler Webster-2024</h2>
-                </div>
-                <div id='bio-start' className='section-divider'></div>
-                <Bio></Bio>
-                <div id='skills-start' className='section-divider'></div>
-                <Skills></Skills>
-                <div id='projects-start' className='section-divider'></div>
-                <Projects projects={projectDetails}></Projects>
-                <div id='experience-start' className='section-divider'></div>
-                <Work jobs={jobDetails}></Work>
+                </div> */}
+            <div id='bio-start' className='section-divider'></div>
+            <Bio></Bio>
+            <div id='projects-start' className='section-divider'></div>
+            <Projects projects={projectDetails}></Projects>
 
-            </div>
-            {/* <img id='bg-accent' src={BGAccent} alt="Background Acceent" /> */}
-        </>
+            <Footer></Footer>
+        </div>
     )
 }
 

@@ -1,0 +1,48 @@
+@import "../index.css";
+
+.footer{
+    display: flex;
+    position: absolute;
+    height: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #F87C56;
+}
+
+
+.footer-logo-section {
+    width: 30rem;
+    /* padding: 1rem 0; */
+    margin: auto;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+
+.footer-head {
+    color: var(--background);
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacts{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: right;
+}
+
+.social-link{
+    color: var(--text-light);
+}

@@ -10,24 +10,15 @@ class Projects extends Component {
     render () {
         return(
             <section id='projects' className='page-section'>
-                <hr></hr>
-                <div className="vertical-container">
-                    <div className="vertical-text-normal section-label">
-                        <p>P</p>
-                        <p>R</p>
-                        <p>O</p>
-                        <p>J</p>
-                        <p>E</p>
-                        <p>C</p>
-                        <p>T</p>
-                        <p>S</p>
-                    </div>
-                </div>
+                {/* <hr></hr> */}
+
                 <section id='projects-grid'>
-                    <Project projectName={this.props.projects.mystery.name} projectIcon={this.props.projects.mystery.image} tagLine={this.props.projects.mystery.tagLine}></Project>
-                    <Project projectName={this.props.projects.hapticGlove.name} projectIcon={this.props.projects.hapticGlove.image} tagLine={this.props.projects.hapticGlove.tagLine}></Project>
-                    <Project projectName="Open Source Mechanical Macropad"></Project>
-                    <Project projectName="Weather Resistant Enivironmental Sensor Network For Realtime Agricultural Monitoring"></Project>
+                    <Project project={this.props.projects.mystery} >
+                            <a href='https://tmwebste.github.io/pui_project/' target='_blank'>Play the game</a>
+                    </Project>
+                    <Project project={this.props.projects.hapticGlove} ></Project>
+                    <Project project={this.props.projects.macrowPad}></Project>
+                    <Project project={this.props.projects.vineyard}></Project>
                 </section>
 
             </section>

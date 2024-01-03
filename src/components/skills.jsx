@@ -19,17 +19,7 @@ class Skills extends Component {
         return(
             <section id='skills' className='page-section'>
                 <hr></hr>
-                {/* <h1 className='section-header'>SKILLS</h1> */}
-                <div className="vertical-container">
-                    <div className="vertical-text-normal section-label">
-                        <p>S</p>
-                        <p>K</p>
-                        <p>I</p>
-                        <p>L</p>
-                        <p>L</p>
-                        <p>S</p>
-                    </div>
-                </div>
+
                 <section id='skill-grid'>
                     <Skill skillName = "React" skillIcon={ReactLogo}></Skill>
                     <Skill skillName = "HTML/CSS" skillIcon={HTMLLogo}></Skill>

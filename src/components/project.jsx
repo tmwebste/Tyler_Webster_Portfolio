@@ -11,13 +11,19 @@ class Project extends Component {
         return(
             <article className='project'>
                 <article className='project-top'>
-                    {this.props.projectIcon && (
-                        <img className='project-icon' src={this.props.projectIcon} alt={this.props.projectName + "icon"}></img>
+                    {this.props.project.image && (
+                        <img className='project-icon' src={this.props.project.image} alt={this.props.project.name + "icon"}></img>
                     )}
                 </article>
                 <article className='project-bottom'>
-                    <h2 className='project-name'>{this.props.projectName}</h2>
-                    <p className='project-tag'>{this.props.tagLine}</p>
+                    <div className='project-summary'>
+                        <h2 className='project-name'>{this.props.project.name}</h2>
+                        <p className='project-tag'>{this.props.project.tagLine}</p>
+                        {this.props.children}
+                    </div>
+                    <div className='see-project-div'>
+                        <a className='see-more'>See More</a>
+                    </div>
                 </article>
             </article>
         )

@@ -1,64 +1,61 @@
 /* Place in your CSS file at the top of the document */
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
 @import "../index.css";
 
 .custom-nav {
-    position: fixed; /* Keeps the navigation fixed */
-    z-index: 4;
-    top: 0; /* Aligns it to the top of the viewport */
-    left: 0;
-    width: 100%;
-    margin: 0px;
-    height: 60px;
+    /* z-index: 4; */
+    width: 100dvw;
+    margin: 0px; 
+    padding: 0px;
+    /* height: 60px; */
     /* background-color: #74546A; */
-    background-color: var(--background);
+    /* background-color: var(--background); */
     display: inline-flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-    gap: 2.5rem; /* Adjust as needed */
-    
 }
 
 .logo-section {
-    width: 25%;
+    width: 30rem;
     /* padding: 1rem 0; */
-    padding-left: 10px;
-    display: flex;
-    justify-content: center;
+    padding-left: auto;
+    justify-content: left;
     align-items: center;
-    gap: 0.625rem; /* Adjust as needed */
+    text-align: left;
 }
 
 .logo-text {
-    text-align: center;
-    color: #1F271B;
-    font-size: 2.5rem;
-    font-family: 'Zen Tokyo Zoo';
-    font-weight: 400;
-    letter-spacing: 0.75rem;
+    color: var(--text-dark);
+    font-size: 20px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    letter-spacing: 4;
     word-wrap: break-word;
 }
 
 .menu-section {
     position: relative;
     z-index: 7;
-    width: 60%;
+    width: 70%;
     /* padding: 2rem 1rem; */
     display: flex;
-    justify-content: space-between; /* Adjusted alignment */
+    margin: 0px;
+    padding: 0px;
+    justify-content: left; /* Adjusted alignment */
     align-items: center; /* Adjusted alignment */
     gap: 0.625rem; /* Adjust as needed */
 }
 
 .menu-item {
     flex: 1; /* Equal distribution of menu items */
-    height: 2.25rem;
     text-align: center;
-    color: var(--text-light);
-    font-size: 2.5rem;
-    font-family: 'Zen Tokyo Zoo';
+    text-justify: center;
+    color: var(--text-dark);
+    font-size: 20px;
+    font-family: var(--main-font);
     font-weight: 400;
     letter-spacing: 0.1875rem; /* Adjust as needed */
     word-wrap: break-word;
@@ -86,16 +83,23 @@
     .custom-nav{
         width: 100%;
         z-index: 8;
+        flex-direction: column;
     }
 
-    .empty-space {
-        position: absolute;
-        top: 60px;
-        right: -50px;
-        padding: 0;
-        margin: 0;
+    .logo-section{
+        width: 100%;
+        padding-left: 10px;
     }
- 
+
+    .menu-section{
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .menu-item{
+        text-justify: left;
+        text-align: left;
+    }
 
     .menu-item {
         font-size: .75rem; /* Adjust font size for smaller screens */
