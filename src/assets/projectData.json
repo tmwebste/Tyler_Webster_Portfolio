@@ -1,0 +1,112 @@
+{
+    "projects": [
+        {
+            "name": "OpenAI Powered Murder Mystery Game",
+            "index":0,
+            "tagLine": "Dynamically generating game scenarios and character responses via Open AI.",
+            "image": "../assets/AI_Mystery.png",
+            "expanded": false,
+            "details": {
+                "brief":"",
+                "problem": "",
+                "solution": "" ,
+                "process": "",
+                "contributions":[
+                    {
+                        "contribution": "", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    },
+                    {
+                        "contribution": "", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    },
+                    {
+                        "contribution": "", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Haptic Glove For Physical Therapy",
+            "index":1,
+            "tagLine": "Improving activity learning and adhesion through continuous haptic feedback and feed-forward.",
+            "image": "../assets/AI_Mystery.png",
+            "expanded": false,
+            "details": {
+                "brief":"",
+                "problem": "",
+                "solution": "" ,
+                "process": "",
+                "contributions":[
+                    {
+                        "contribution": "", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    },
+                    {
+                        "contribution": "", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    },
+                    {
+                        "contribution": "", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Open Source Mechanical Macropad",
+            "index":2,
+            "tagLine": "Custom macro pad designed to improve desktop productivity",
+            "image": "../assets/AI_Mystery.png",
+            "expanded": false,
+            "details": {
+                "brief":"",
+                "problem": "",
+                "solution": "" ,
+                "process": "",
+                "contributions":[
+                    {
+                        "contribution": "", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    },
+                    {
+                        "contribution": "", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    },
+                    {
+                        "contribution": "", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Precision Agriculture for Vineyard Frost Protection",
+            "index":3,
+            "tagLine": "Harnessing technology to provide small-scale vineyards with an affordable, efficient solution for early frost detection, enhancing crop protection and economic sustainability.",
+            "image": "../assets/vineyardThumbnail.jpg",
+            "expanded": false,
+            "details": {
+                "brief": "Precision agriculture is a growing trend where monitoring and automation is utilized to enhance yields and minimize financial risks. My team was tasked with creating a solution tailored for a local Virginia vineyard facing challenges with frost. Our client had previously experienced a substantial loss when more than 50% of a year’s harvest was damaged by frost. Frost countermeasures are commonly used but are costly and require advanced notice to determine when to deploy them. The solution is a reliable and cost-effective sensor network to detect early frost conditions for frost prevention in small-scale vineyards to help better inform when and where to deploy frost countermeasures.",
+                "problem": "Frost in vineyards poses significant risk of drastically reduced grape yields. This issue is critically important for small vineyard owners, particularly in the Shenandoah Valley, where frost can lead to substantial financial losses and affect crop quality. Precision agriculture techniques can be utilized to optimize the deployment of these countermeasures, but existing frost monitoring systems are often too expensive for small-scale operations, highlighting the need for a more affordable solution.",
+                "solution": "Our solution is a network of sensors capable of monitoring temperature variations and predicting the future risk of frost, offering an early detection system for frost conditions. Crucially, this system was designed to be significantly more cost-effective than existing solutions, making it accessible to small vineyard owners and addressing the financial constraints often faced in implementing advanced agricultural technology." ,
+                "process": "The development of the solution involved a multi-stage process. Initially, we conducted thorough research and engaged in discussions with vineyard owners to understand their specific needs. This was followed by brainstorming sessions, where various concepts were proposed and evaluated for feasibility and potential impact. The selected concept was then refined through iterative prototyping, testing, and feedback. This process not only ensured that the final solution was highly tailored to the needs of the vineyards but also incorporated innovative approaches to sensor technology and data management.",
+                "contributions":[
+                    {
+                        "contribution": "My contribution involved designing and assembling the hardware for the sensor system. This included selecting appropriate sensors, creating a durable and weather-resistant design, and ensuring the system's operational efficiency in various environmental conditions.", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    },
+                    {
+                        "contribution": "I also developed the software for data acquisition and management. This software was responsible for collecting data from the sensors, processing it, and presenting it in a user-friendly format for vineyard managers to make informed decisions.", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    },
+                    {
+                        "contribution": "Another crucial aspect of my role was integrating the sensor system with a backend server. This involved establishing reliable communication between the sensors and the server, ensuring seamless data transfer.", 
+                        "contributionImage": "../assets/AI_Mystery.png"
+                    }
+                ]
+            }
+        }
+    ]
+}

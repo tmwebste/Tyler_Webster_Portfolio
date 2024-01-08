@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState, useEffect, Component } from 'react'
 
 import Bio from '../components/bio'
 import Projects from '../components/projects'
@@ -7,104 +7,150 @@ import Footer from '../components/footer'
 import Skills from '../components/skills'
 import Work from '../components/work'
 import BGAccent from '../assets/Vector_BG.svg'
-import AIMystery from '../assets/AI_Mystery.png'
+// import AIMystery from '../assets/AI_Mystery.png'
+import projectJson from '../assets/projectData.json'
+import workJson from '../assets/workData.json'
 
-function Home() {
+class Home extends Component {
+    constructor() {
+        super();
 
-    const [projectDetails, setProjectDetails] = useState({
-        mystery: {
-            name: 'OpenAI Powered Murder Mystery Game',
-            tagLine: 'Dynamically generating game scenarios and character responses via Open AI.',
-            image: AIMystery,
-            expanded: false,
-            details: {
+        this.state = {
+            focus: 'all',
+            bioExpanded: false,
+            selectedProjectIndex: null,
+            projectData: projectJson.projects
+        };
+    }
 
-            }
-        },
-        hapticGlove: {
-            name: 'Haptic Glove For Physical Therapy',
-            tagLine: 'Improving activity learning and adhesion through continuous haptic feed-back and feed-forward.',
-            image: AIMystery,
-            expanded: false
-        },
-        macrowPad: {
-            name: 'Open Source Mechanical Macropad',
-            tagLine: 'Custom macro pad designed to improve desktop productivity',
-            image: AIMystery,
-            expanded: false
-        },
-        vineyard: {
-            name: "Weather Resistant Enivironmental Sensor Network For Realtime Agricultural Monitoring",
-            tagLine: 'Distributed network of temperature sensors for monitoring temperatures across vinyards and displaying them to the user in real time.',
-            image: AIMystery,
-            expanded: false
+    resetView = () => {
+        console.log("reseting view");
+
+        const updatedProjectData = [...this.state.projectData];
+
+        // Close all projects
+        updatedProjectData.forEach((project) => {
+          project.expanded = false;
+        });
+
+        this.setState({
+            focus: 'all',
+            bioExpanded: false,
+            selectedProjectIndex: null,
+            projectData: updatedProjectData
+        });
+        console.log(this.state);
+    }
+
+    expandCollapseBio = () => {
+        
+        this.resetView();
+        console.log("toggling bio");
+        let newFocus = 'bio'
+        if (this.state.focus === 'bio') {
+            newFocus = 'all';
+        }
+        this.setState({
+            bioExpanded: !this.state.bioExpanded,
+            focus: newFocus
+        });
+    }
+
+    expandBio = () => {
+        
+        this.resetView();
+        console.log("expanding bio");
+        let newFocus = 'bio'
+        this.setState({
+            bioExpanded: true,
+            focus: newFocus
+        });
+    }
+
+
+    expandProjectSection = () => {
+        
+        this.resetView();
+        console.log("expanding projects");
+        let newFocus = 'project'
+
+        this.setState({
+            focus: newFocus
+        });
+    }
+
+    expandCollapseProject = (projectIndex) => {
+        
+        this.resetView();
+        console.log("toggling specific project: " + projectIndex);
+        let newFocus = 'project'
+
+        const updatedProjectData = [...this.state.projectData];
+
+        // Update the 'expanded' property of the selected project
+        updatedProjectData[projectIndex].expanded = true;
+
+        if (this.state.focus === 'project' && this.state.selectedProjectIndex != null) {
+            newFocus = 'all';
+            updatedProjectData[projectIndex].expanded = false;
+            projectIndex = null;
         }
 
-    });
+        this.setState({
+            projectData: updatedProjectData,
+            selectedProjectIndex: projectIndex,
+            focus: newFocus
+        });
+    }
+    
 
-    const [jobDetails, setJobDetails] = useState({
-        dlb: {
-            jobTitle: "Electrical Design Engineer",
-            companyName: "DLB Associates - Remote",
-            employmentPeriod: "June 2022 - June 2023",
-            jobBulletPoints: [
-                "Generate and review electrical design drawings for mission critical data-center projects",
-                "Conduct site visits and manage construction administration processes with external contractors and clients",
-                "Perform load, voltage drop, short circuit and other relevant electrical calculations",
-                "Collaborate completely remotely with internal and external parties",
-            ],
-        },
-        trek: {
-            jobTitle: "Product Development Engineering Intern",
-            companyName: "Trek Bicycle Corporation - Waterloo, WI",
-            employmentPeriod: "May 2021 - August 2021",
-            jobBulletPoints: [
-                "Researched and developed procedure, software, and electronics to evaluate developmental electric bicycles",
-                "Produced test results responsible for triggering the development of new internal standards for e-bike motors",
-                "Managed user studies collecting anatomical data for the purpose of optimizing bicycle fit geometry",
-                "Created formal test plans for evaluation of bicycle components",
-            ],
-        },
-        jmu: {
-            jobTitle: "Undergraduate Research Assistant: Human Computer Interactions / Computer Engineering",
-            companyName: "James Madison University - Harrisonburg, VA",
-            employmentPeriod: "August 2019 - May 2022",
-            jobBulletPoints: [
-                "Developed, coded, tested and debugged embedded system software",
-                "Produced a wearable computing device for the purpose of exploring the use of haptic feedback as a performance correction method during physical exercise",
-                "Created system prototypes and conducted pre-study to assess device performance",
-                "Produced PCB, software, and algorithms to automate feedback for wireless haptic feedback system",
-            ],
-        },
-        eniware: {
-            jobTitle: "Engineering Intern",
-            companyName: "Eniware, Portable Sterilization - Bethesda, MD",
-            employmentPeriod: "May 2017 - July 2017",
-            jobBulletPoints: [
-                "Generated prototype renderings for presentation and display",
-                "Assisted lead engineer to develop a portable surgical equipment sterilizer",
-                "Collaborated with chemists to optimize internal layout for sterilization processes",
-            ],
-        },
+    renderFocused = () => {
+        switch (this.state.focus) {
+            case 'all':
+                return (
+                    <>
+                        <div id='bio-start' className='section-divider'></div>
+                        <Bio expandBio={this.expandCollapseBio} expanded={this.state.bioExpanded}></Bio>
+                        <div id='projects-start' className='section-divider'></div>
+                        {/* <Projects projects={projectData}></Projects> */}
+                        {this.state.projectData.length === 0 ? (
+                            <div>Loading...</div> // Display a loading indicator while data is being loaded
+                        ) : (
+                            <Projects selectedProjectIndex={this.state.selectedProjectIndex} expandCollapseProject={this.expandCollapseProject} projects={this.state.projectData} />
+                        )}
+                    </>
+                )
+            case 'bio':
+                return (
+                    <>
+                        <div id='bio-start' className='section-divider'></div>
+                        <Bio expandBio={this.expandCollapseBio} expanded={this.state.bioExpanded}></Bio>
+                    </>
+                )
+            case 'project':
+                return (
+                    <>
+                        <div id='projects-start' className='section-divider'></div>
+                        {/* <Projects projects={projectData}></Projects> */}
+                        {this.state.projectData.length === 0 ? (
+                            <div>Loading...</div> // Display a loading indicator while data is being loaded
+                        ) : (
+                            <Projects selectedProjectIndex={this.state.selectedProjectIndex} expandCollapseProject={this.expandCollapseProject} projects={this.state.projectData} />
+                        )}
+                    </>
+                )
+        }
+    }
 
-
-
-    });
-
-    return (
-        <div className='main'>
-            <NavBar></NavBar>
-            {/* <div className="vertical-text">
-                    <h2>Tyler Webster-2024</h2>
-                </div> */}
-            <div id='bio-start' className='section-divider'></div>
-            <Bio></Bio>
-            <div id='projects-start' className='section-divider'></div>
-            <Projects projects={projectDetails}></Projects>
-
-            <Footer></Footer>
-        </div>
-    )
+    render() {
+        return (
+            <div className='main'>
+                <NavBar goHome={this.resetView} expandBio={this.expandBio} expandProjectSection={this.expandProjectSection}></NavBar>
+                    {this.renderFocused()}
+                <Footer></Footer>
+            </div>
+        )
+    }
 }
 
 

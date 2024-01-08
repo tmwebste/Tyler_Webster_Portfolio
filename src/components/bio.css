@@ -41,6 +41,15 @@
     
 }
 
+.expand-symbol{
+
+}
+
+.rotated{
+    transform : rotate(45deg);
+    
+}
+
 #tagline {
     color: #1F271B;
     font-family: var(--main-font);
@@ -72,15 +81,35 @@
     font-size: 20px;
     /* padding: auto; */
     margin: auto;
-    background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
     overflow: hidden;  
     font-family: var(--main-font);
-    font-weight: 300;
+    font-weight: 400;
+    background-color: #F87C56;
+    border-radius: 0px;
+    /* width: 250px; */
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    text-justify: center;
+    outline: none;
+    border: none;
 }
 
+.see-more:focus {
+    outline:0;
+}
+
+.see-more:hover {
+    cursor: pointer;
+    color: #E0479E;
+}
+
+.see-more:active {
+    outline: none;
+    border: none;
+}
 
 .bio-expanded {
     display: flex;
@@ -91,7 +120,6 @@
     flex-direction: column;
     background-color: var(--background);
     margin-top: 20px;
-   
 }
 
 
