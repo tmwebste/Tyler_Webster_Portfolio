@@ -43,7 +43,6 @@ class Projects extends Component {
                 )
         }
 
-
     }
 
     render() {

@@ -4,9 +4,12 @@
     display: grid;
     margin-top: 0px;
     margin-bottom: 60px;
-    grid-template-columns: repeat(1, 1fr); /* 4 columns */
-    grid-template-rows: repeat(4, 1fr); /* 2 rows */
-    gap: 10px; /* Adjust as needed for spacing between items */
+    grid-template-columns: repeat(1, 1fr);
+    /* 4 columns */
+    grid-template-rows: repeat(4, 1fr);
+    /* 2 rows */
+    gap: 10px;
+    /* Adjust as needed for spacing between items */
 }
 
 .project {
@@ -29,7 +32,13 @@
     backdrop-filter: blur(10px); */
 }
 
-.project-top{
+.project-expanded {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.project-top {
     display: flex;
     width: 100%;
     align-content: center;
@@ -39,30 +48,56 @@
     /* background-color: blueviolet; */
 }
 
+
 .project-icon {
     width: 100%;
     margin: auto;
     border-radius: 25px;
 }
 
-.project-bottom{
+.project-bottom {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 0upx;
     text-align: left;
     text-justify: top;
-    
+
     /* background-color: rgb(221, 255, 0); */
 }
 
-
-.project-summary{
-    height: 90%;
+.project-expanded-bottom {
+    display: flex;
+    flex-direction: row;
+    
 }
 
 
-.see-project-div{
+
+.project-summary {
+    height: 90%;
+}
+
+.project-expanded-summary {
+    margin-top: 20px;
+    width: 50%;
+    text-justify: left;
+    text-align: left;
+}
+
+.project-brief {
+    width: 50%;
+    text-justify: left;
+    text-align: left;
+}
+
+.project-details {
+
+    text-justify: left;
+    text-align: left;
+}
+
+.see-project-div {
     display: flex;
     height: 10%;
     bottom: 100%;
@@ -74,7 +109,7 @@
     color: var(--text-dark);
 }
 
-hr{
+hr {
     border: 2px solid var(--text-dark);
 }
 
@@ -84,9 +119,22 @@ hr{
         padding: 0px;
     }
 
+    .project-expanded-bottom {
+        flex-direction: column;
+    }
+
+    .project-expanded-summary {
+        width: 100%;
+
+    }
+    
+    .project-brief {
+        width: 100%;
+
+    }
 
 
-    .project-left{
+    .project-left {
         padding-left: 0px;
         margin-left: 0px;
     }

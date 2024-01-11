@@ -30,7 +30,7 @@ class Home extends Component {
 
         // Close all projects
         updatedProjectData.forEach((project) => {
-          project.expanded = false;
+            project.expanded = false;
         });
 
         this.setState({
@@ -43,7 +43,7 @@ class Home extends Component {
     }
 
     expandCollapseBio = () => {
-        
+
         this.resetView();
         console.log("toggling bio");
         let newFocus = 'bio'
@@ -57,7 +57,7 @@ class Home extends Component {
     }
 
     expandBio = () => {
-        
+
         this.resetView();
         console.log("expanding bio");
         let newFocus = 'bio'
@@ -69,7 +69,7 @@ class Home extends Component {
 
 
     expandProjectSection = () => {
-        
+
         this.resetView();
         console.log("expanding projects");
         let newFocus = 'project'
@@ -80,7 +80,7 @@ class Home extends Component {
     }
 
     expandCollapseProject = (projectIndex) => {
-        
+
         this.resetView();
         console.log("toggling specific project: " + projectIndex);
         let newFocus = 'project'
@@ -101,8 +101,14 @@ class Home extends Component {
             selectedProjectIndex: projectIndex,
             focus: newFocus
         });
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
     }
-    
+
 
     renderFocused = () => {
         switch (this.state.focus) {
@@ -146,7 +152,7 @@ class Home extends Component {
         return (
             <div className='main'>
                 <NavBar goHome={this.resetView} expandBio={this.expandBio} expandProjectSection={this.expandProjectSection}></NavBar>
-                    {this.renderFocused()}
+                {this.renderFocused()}
                 <Footer></Footer>
             </div>
         )

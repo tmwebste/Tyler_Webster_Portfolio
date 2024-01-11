@@ -9,7 +9,7 @@ class NavBar extends Component {
 
     render() {
         return (
-            <nav className="custom-nav">
+            <nav className="custom-nav" id='main'>
                 <div className="logo-section">
                     <a className="logo-text" onClick={this.props.goHome} href='#'>Tyler Webster</a>
                 </div>
