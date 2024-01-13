@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './navBar.css';
-import myResume from '../assets/test.pdf'
+import myResume from '../assets/Tyler_Webster_Resume.pdf'
 
 class NavBar extends Component {
     constructor() {

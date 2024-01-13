@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    color: var(--text-dark);
 }
 
 .project-top {
