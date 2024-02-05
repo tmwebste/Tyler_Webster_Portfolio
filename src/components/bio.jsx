@@ -36,31 +36,19 @@ class Bio extends Component {
 
             {this.props.expanded && 
                     <section className='bio-expanded'>
-                        <h1>Expanded Bio</h1>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
-                        <p>This is my expanded bio</p>
+                        <h1 className='bio-header'>{this.props.bio.title}</h1>
+                        {this.props.bio.items.map((bioItem, index) => (
+                            <article className="project-expanded-bottom">
+                                <div  key={index} className='bio-expanded-image'>
+                                    <img className='bio-image' src={bioItem.image} alt='bio image'></img>
+                                </div>
+                                <article className='bio-item'>
+                                    <h2 >{bioItem.title}</h2>
+                                    <p>{bioItem.text}</p>
+                                </article>
+                           
+                            </article>
+                        ))}
                     </section>
                 }
             </>

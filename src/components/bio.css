@@ -41,13 +41,8 @@
     
 }
 
-.expand-symbol{
-
-}
-
 .rotated{
     transform : rotate(45deg);
-    
 }
 
 #tagline {
@@ -88,6 +83,7 @@
     font-family: var(--main-font);
     font-weight: 400;
     background-color: #F87C56;
+    color: var(--text-dark);
     border-radius: 0px;
     /* width: 250px; */
     padding: 5px 10px 5px 10px;
@@ -115,13 +111,58 @@
     display: flex;
     position: relative;
     z-index: 4;
-    width: 100%;
+    width: 80%;
     height: 100%;
     flex-direction: column;
     background-color: var(--background);
+    align-content: center;
+    justify-content: center;
+    margin:auto;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
+.bio-header {
+    width: 80%;
+    text-align: left;
+    text-justify: left;
+}
+
+.bio-expanded-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.bio-image {
+    /* padding-right: 40px; */
+    width: 100%;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.bio-expanded-image {
+    margin-top: 20px;
+    padding-right: 40px;
+    width: 25%;
+    /* text-justify: left;
+    text-align: left; */
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* z-index: 4; */
+    padding: 0;
+    margin: 0;
+    padding-right: 40px;
+}
+
+.bio-item {
+    width: 75%;
+    text-align: left;
+    text-justify: left;
+    padding-left: 150px;
+}
 
 @media screen and (max-width: 1000px) {
     #bio {
@@ -157,5 +198,38 @@
         font-size: 1.5rem;
     }
 
+    .bio-expanded-bottom {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+
+
+    .bio-header {
+        width: 100%;
+        text-align: center;
+        text-justify: center;
+    }
+
+    .bio-expanded-image {
+        width: 100%;
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+
+    .bio-item {
+        width: 100%;
+        text-justify: center;
+        text-align: center;
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
 }
 

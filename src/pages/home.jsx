@@ -9,6 +9,7 @@ import Work from '../components/work'
 import BGAccent from '../assets/Vector_BG.svg'
 // import AIMystery from '../assets/AI_Mystery.png'
 import projectJson from '../assets/projectData.json'
+import bioJson from '../assets/bio.json'
 import workJson from '../assets/workData.json'
 
 class Home extends Component {
@@ -19,7 +20,8 @@ class Home extends Component {
             focus: 'all',
             bioExpanded: false,
             selectedProjectIndex: null,
-            projectData: projectJson.projects
+            projectData: projectJson.projects,
+            bio: bioJson.bio
         };
     }
 
@@ -63,7 +65,8 @@ class Home extends Component {
         let newFocus = 'bio'
         this.setState({
             bioExpanded: true,
-            focus: newFocus
+            focus: newFocus,
+            
         });
     }
 
@@ -130,7 +133,7 @@ class Home extends Component {
                 return (
                     <>
                         <div id='bio-start' className='section-divider'></div>
-                        <Bio expandBio={this.expandCollapseBio} expanded={this.state.bioExpanded}></Bio>
+                        <Bio expandBio={this.expandCollapseBio} expanded={this.state.bioExpanded} bio={this.state.bio}></Bio>
                     </>
                 )
             case 'project':

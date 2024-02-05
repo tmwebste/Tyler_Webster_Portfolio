@@ -19,13 +19,13 @@ class Project extends Component {
                     </article>
                     <article className='project-expanded-bottom'>
                         <div className='project-expanded-summary'>
-                            <h1 className='project-name'>{this.props.project.name}</h1>
+                            <h1 className='project-name-expanded'>{this.props.project.name}</h1>
                             {/* <h2 className='project-tag'>{this.props.project.tagLine}</h2> */}
                             
                         </div>
                         <div className='project-brief'>
-                            <h2>Project Brief</h2>
-                            <p>{this.props.project.details.brief}</p>
+                            <h2>{this.props.project.details.brief.title}</h2>
+                            <p>{this.props.project.details.brief.text}</p>
 
                         </div>
                     </article>
@@ -33,15 +33,24 @@ class Project extends Component {
 
                     <article className='project-details'>
                         {/* <p>{this.props.project.details.brief}</p> */}
-                        <h2>The Problem</h2>
-                        <p>{this.props.project.details.problem}</p>
-                        <h2>The Solution</h2>
-                        <p>{this.props.project.details.solution}</p>
-                        <h2>The Process</h2>
-                        <p>{this.props.project.details.process}</p>
-                        <h2>My Contributions</h2>
-                        {this.props.project.details.contributions.map((contribution, index) => (
-                            <p key={index}>{contribution.contribution}</p>
+                        <h2>{this.props.project.details.problem.title}</h2>
+                        <p>{this.props.project.details.problem.text}</p>
+                        <h2>{this.props.project.details.solution.title}</h2>
+                        <p>{this.props.project.details.solution.text}</p>
+                        <h2>{this.props.project.details.process.title}</h2>
+                        <p>{this.props.project.details.process.text}</p>
+                        <h2>{this.props.project.details.contributions.title}</h2>
+                        {this.props.project.details.contributions.details.map((contribution, index) => (
+                            <article className="project-expanded-bottom">
+                                <div className='project-expanded-summary'>
+                                    <img className='contribution-image' src={contribution.contributionImage} alt={contribution.imageAlt}></img>
+                                </div>
+                                <article className='project-brief'>
+                                    <h3 key={index}>{contribution.title}</h3>
+                                    <p key={index}>{contribution.contribution}</p>
+                                </article>
+                           
+                            </article>
                         ))}
                         {this.props.children}
                     </article>
