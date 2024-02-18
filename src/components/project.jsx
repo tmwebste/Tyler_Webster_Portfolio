@@ -33,13 +33,26 @@ class Project extends Component {
 
                     <article className='project-details'>
                         {/* <p>{this.props.project.details.brief}</p> */}
-                        <h2>{this.props.project.details.problem.title}</h2>
+                        <h2 className='subsection-header'>{this.props.project.details.problem.title}</h2>
                         <p>{this.props.project.details.problem.text}</p>
-                        <h2>{this.props.project.details.solution.title}</h2>
+                        <h2 className='subsection-header'>{this.props.project.details.solution.title}</h2>
                         <p>{this.props.project.details.solution.text}</p>
-                        <h2>{this.props.project.details.process.title}</h2>
+                        <h2 className='subsection-header'>{this.props.project.details.process.title}</h2>
                         <p>{this.props.project.details.process.text}</p>
-                        <h2>{this.props.project.details.contributions.title}</h2>
+                        {this.props.project.details.process.details.map((process, index) => (
+                            <article className="project-expanded-bottom">
+
+                                <article className='project-brief'>
+                                    <h3 key={index}>{process.title}</h3>
+                                    <p key={index}>{process.text}</p>
+                                </article>
+                                <div className='process-right'>
+                                    <img className='process-image' src={process.image} alt={process.imageAlt}></img>
+                                </div>
+
+                            </article>
+                        ))}
+                        <h2 className='subsection-header'>{this.props.project.details.contributions.title}</h2>
                         {this.props.project.details.contributions.details.map((contribution, index) => (
                             <article className="project-expanded-bottom">
                                 <div className='project-expanded-summary'>
@@ -47,20 +60,23 @@ class Project extends Component {
                                 </div>
                                 <article className='project-brief'>
                                     <h3 key={index}>{contribution.title}</h3>
+                                    {/* <h2 key={index}>{}</h3> */}
                                     <p key={index}>{contribution.contribution}</p>
                                 </article>
                            
                             </article>
                         ))}
+                        <h2 className='subsection-header'>{this.props.project.details.reflection.title}</h2>
+                        <p>{this.props.project.details.reflection.text}</p>
                         {this.props.children}
                     </article>
                     <div className='see-project-div'>
-                                {this.props.project.expanded ? (
-                                    <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See Less</button>
-                                ) : (
-                                    <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See More</button>
-                                )}
-                            </div>
+                        {this.props.project.expanded ? (
+                            <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See Less</button>
+                        ) : (
+                            <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See More</button>
+                        )}
+                    </div>
                 </section>
             )
         } else {

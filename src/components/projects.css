@@ -63,6 +63,25 @@
     border-radius: 25px;
 }
 
+.subsection-header{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 60px;
+}
+
+.process-right{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+}
+
+.process-image {
+
+   max-width: 300px;
+}
+
 .project-bottom {
     display: flex;
     flex-direction: column;

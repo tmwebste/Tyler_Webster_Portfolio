@@ -17,10 +17,10 @@
 .bio-left {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: left;
+    align-content: left;
     /* z-index: 4; */
-    width: 50%;
+    width: 25%;
     padding: 0;
     margin: 0;
 
@@ -30,7 +30,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 75%;
     padding: 0;
     margin: 0;
     text-align: center;
