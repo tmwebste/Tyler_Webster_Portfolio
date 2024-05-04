@@ -10,12 +10,17 @@
   /* background-color: #74546A; */
   /* --background:#71816D; */
   /* --background: #0081AF; */
-  width: 100dvw;
+  /* width: 100dvw; */
 
-  --background:#ECE4B7;
+  --background:#F0EAD6;
+  --secondary: #819171;
   --text-dark:#1F271B;
-  --text-light:#3D7A9E;
+  --text-light:#F0EAD6;
+  --text-highlight: #007ea7;
+  --button: #374f2f;
   --main-font:'Comfortaa';
+  /* --main-font: "aquatronik-variable",sans-serif; */
+  --secondary-font: 'Ubuntu';
   background-color: var(--background);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,9 +32,10 @@ a {
   font-weight: 500;
   color: var(--text-dark);
   text-decoration: inherit;
+  font-family: var(--secondary-font);
 }
 a:hover {
-  color: #E0479E;
+  color: var(--text-highlight)
 }
 
 body {
@@ -45,6 +51,10 @@ h1 {
   line-height: 1.1;
 }
 
+h3 {
+  font-family: var(--secondary-font);
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -58,7 +68,7 @@ button {
 }
 
 button:hover {
-  border-color: #E0479E;
+  border-color: var(--text-highlight);
 }
 
 button:focus,
@@ -66,13 +76,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+p {
+  font-family: 'Ubuntu';
+  font-size: 20px;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: var(--background);
   }
   a:hover {
-    color: #E0479E;
+    color: var(--text-highlight);
   }
   button {
     background-color: #f9f9f9;

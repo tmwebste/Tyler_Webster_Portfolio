@@ -79,6 +79,38 @@ class Home extends Component {
 
         this.setState({
             focus: newFocus
+            
+        });
+    }
+
+    incrementProjectIndex = (increment) => {
+
+        this.resetView();
+        let newFocus = 'project'
+        
+        let newProjectIndex = this.state.selectedProjectIndex + increment;
+        if (newProjectIndex > 3){
+            newProjectIndex = 0;
+        } else if (newProjectIndex < 0){
+            newProjectIndex = 3;
+        }
+        console.log(`Changing to project ${newProjectIndex}`)
+
+        const updatedProjectData = [...this.state.projectData];
+
+        // Update the 'expanded' property of the selected project
+        updatedProjectData[newProjectIndex].expanded = true
+
+        this.setState({
+            projectData: updatedProjectData,
+            selectedProjectIndex: newProjectIndex,
+            focus: newFocus
+        });
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
         });
     }
 
@@ -144,7 +176,7 @@ class Home extends Component {
                         {this.state.projectData.length === 0 ? (
                             <div>Loading...</div> // Display a loading indicator while data is being loaded
                         ) : (
-                            <Projects selectedProjectIndex={this.state.selectedProjectIndex} expandCollapseProject={this.expandCollapseProject} projects={this.state.projectData} />
+                            <Projects selectedProjectIndex={this.state.selectedProjectIndex} incrementProjectIndex={this.incrementProjectIndex} expandCollapseProject={this.expandCollapseProject} projects={this.state.projectData} />
                         )}
                     </>
                 )

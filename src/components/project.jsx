@@ -11,8 +11,15 @@ class Project extends Component {
         if (this.props.project.expanded) {
             return (
                 <section className='project-expanded'>
+                    <div className='see-project-div'>
+                        <>
+                            <button onClick={() => this.props.incrementProjectIndex(-1)} className='see-more'>Previous Project</button>
+                            {/* <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See Less</button> */}
+                            <button onClick={() => this.props.incrementProjectIndex(1)} className='see-more'>Next Project</button>
+                        </>
+                    </div>
 
-                    <article className='project-expaded-top'>
+                    <article className='project-expanded-top'>
                         {this.props.project.image && (
                             <img className='project-icon' src={this.props.project.image} alt={this.props.project.name + "icon"}></img>
                         )}
@@ -21,7 +28,7 @@ class Project extends Component {
                         <div className='project-expanded-summary'>
                             <h1 className='project-name-expanded'>{this.props.project.name}</h1>
                             {/* <h2 className='project-tag'>{this.props.project.tagLine}</h2> */}
-                            
+
                         </div>
                         <div className='project-brief'>
                             <h2>{this.props.project.details.brief.title}</h2>
@@ -63,7 +70,7 @@ class Project extends Component {
                                     {/* <h2 key={index}>{}</h3> */}
                                     <p key={index}>{contribution.contribution}</p>
                                 </article>
-                           
+
                             </article>
                         ))}
                         <h2 className='subsection-header'>{this.props.project.details.reflection.title}</h2>
@@ -71,11 +78,11 @@ class Project extends Component {
                         {this.props.children}
                     </article>
                     <div className='see-project-div'>
-                        {this.props.project.expanded ? (
-                            <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See Less</button>
-                        ) : (
-                            <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See More</button>
-                        )}
+                        <>
+                            <button onClick={() => this.props.incrementProjectIndex(-1)} className='see-more'>Previous Project</button>
+                            {/* <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See Less</button> */}
+                            <button onClick={() => this.props.incrementProjectIndex(1)} className='see-more'>Next Project</button>
+                        </>
                     </div>
                 </section>
             )

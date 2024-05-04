@@ -6,7 +6,7 @@
     height: 100px;
     left: 0;
     width: 100%;
-    background-color: #F87C56;
+    background-color: var(--secondary);
 }
 
 
@@ -22,7 +22,7 @@
 
 .footer-head {
     color: var(--background);
-    
+    font-family: var(--primary-font);
 }
 
 .footer-content {
@@ -41,8 +41,10 @@
     width: 80%;
     margin: auto;
     justify-content: right;
+    padding: 0;
 }
 
 .social-link{
     color: var(--text-light);
+    padding: 0;
 }

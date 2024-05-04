@@ -1,6 +1,7 @@
 @import "index.css";
 
 #root {
+  /* display: flex; */
   width: 100dvw;
   margin: 0px;
   padding: 0;
