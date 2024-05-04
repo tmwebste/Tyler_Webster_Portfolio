@@ -94,6 +94,8 @@
     flex-direction: column;
     width: 100%;
     padding-left: 0upx;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: left;
     text-justify: top;
 
