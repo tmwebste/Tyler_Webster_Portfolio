@@ -84,15 +84,15 @@ class Home extends Component {
     }
 
     incrementProjectIndex = (increment) => {
-
+        const numProjects = 3;
         this.resetView();
         let newFocus = 'project'
-        
+
         let newProjectIndex = this.state.selectedProjectIndex + increment;
-        if (newProjectIndex > 3){
+        if (newProjectIndex > numProjects){
             newProjectIndex = 0;
         } else if (newProjectIndex < 0){
-            newProjectIndex = 3;
+            newProjectIndex = numProjects;
         }
         console.log(`Changing to project ${newProjectIndex}`)
 

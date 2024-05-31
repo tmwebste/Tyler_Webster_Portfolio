@@ -51,55 +51,6 @@
             }
         },
         {
-            "name": "Haptic Glove For Physical Therapy",
-            "index":1,
-            "tagLine": "Improving activity learning and adhesion through continuous haptic feedback and feed-forward.",
-            "image": "../assets/placeholder.webp",
-            "expanded": false,
-            "details": {
-                "brief":{
-                    "title": "",
-                    "text": ""
-                },
-                "problem": {
-                    "title": "",
-                    "text": ""
-                },
-                "solution": {
-                    "title": "",
-                    "text": ""
-                },
-                "process": {
-                    "title": "",
-                    "text": "",
-                    "details":[
-
-                    ]
-                },
-                "contributions":{
-                    "title":"",
-                    "details": [
-                        {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
-                        },
-                        {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
-                        },
-                        {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
-                        }
-                    ]
-                }, 
-                "reflection":{
-                    "title": "",
-                    "text":""
-                }
-            }
-        },
-        {
             "name": "Open Source Mechanical Macropad",
             "index":2,
             "tagLine": "Custom macro pad designed to improve desktop productivity",
@@ -152,7 +103,7 @@
             "name": "Precision Agriculture for Vineyard Frost Protection",
             "index":3,
             "tagLine": "Harnessing technology to provide small-scale vineyards with an affordable, efficient solution for early frost detection, enhancing crop protection and economic sustainability.",
-            "image": "../assets/vineyardThumbnail.jpg",
+            "image": "../assets/Vineyard/vineyardThumbnail.jpg",
             "expanded": false,
             "details": {
                 "brief": {
@@ -168,8 +119,8 @@
                     "text": "Our solution is a network of sensors capable of monitoring temperature variations and predicting the future risk of frost, offering an early detection system for frost conditions. Crucially, this system was designed to be significantly more cost-effective than existing solutions, making it accessible to small vineyard owners and addressing the financial constraints often faced in implementing advanced agricultural technology."
                 },
                 "process": {
-                    "title": "The Process",
-                    "text": "The development of the solution involved a multi-stage process. Initially, we conducted thorough research and engaged in discussions with vineyard owners to understand their specific needs. This was followed by brainstorming sessions, where various concepts were proposed and evaluated for feasibility and potential impact. The selected concept was then refined through iterative prototyping, testing, and feedback. This process not only ensured that the final solution was highly tailored to the needs of the vineyards but also incorporated innovative approaches to sensor technology and data management.",
+                    "title": "",
+                    "text": "",
                     "details":[
 
                     ]
@@ -179,20 +130,20 @@
                     "details":[
                         {   
                             "title":"System Hardware",
-                            "contribution": "My contribution involved designing and assembling the hardware for the sensor system. This included selecting appropriate sensors, creating a durable and weather-resistant design, and ensuring the system's operational efficiency in various environmental conditions.", 
-                            "contributionImage": "../assets/placeholder.webp",
+                            "contribution": "Designing and assembling the hardware for the sensor system. This included selecting appropriate sensors, creating a durable and weather-resistant design, and ensuring the system's operational efficiency in various environmental conditions.", 
+                            "contributionImage": "../assets/Vineyard/Single_Sensor.png",
                             "imageAlt":"image description"
                         },
                         {
                             "title":"Sensor Processing",
-                            "contribution": "I also developed the software for data acquisition and management. This software was responsible for collecting data from the sensors, processing it, and presenting it in a user-friendly format for vineyard managers to make informed decisions.", 
-                            "contributionImage": "../assets/placeholder.webp",
+                            "contribution": "Software for data acquisition and management. This software was responsible for collecting data from the sensors, processing it, and presenting it in a user-friendly format for vineyard managers to make informed decisions.", 
+                            "contributionImage": "../assets/Vineyard/Vineyard_Install.png",
                             "imageAlt":"image description"
                         },
                         {
                             "title":"Data Pipeline",
-                            "contribution": "Another crucial aspect of my role was integrating the sensor system with a backend server. This involved establishing reliable communication between the sensors and the server, ensuring seamless data transfer.", 
-                            "contributionImage": "../assets/placeholder.webp",
+                            "contribution": "Integrating the sensor system with a backend server. This involved establishing reliable communication between the sensors and the server, ensuring seamless data transfer.", 
+                            "contributionImage": "../assets/Vineyard/UI.png",
                             "imageAlt":"image description"
                         }
                     ]
@@ -206,6 +157,113 @@
         {
             "name": "Bumble BeeThere",
             "index":4,
+            "tagLine": "A new location based paradigm for Bumble's app.",
+            "image": "../assets/Bumble_Thumbnail.png",
+            "expanded": false,
+            "details": {
+                "brief":{
+                    "title": "Project Brief",
+                    "text": "This project aims to grow Bumble's paying subscriber base with improved location services across mobile, desktop, and watch devices, focusing on the under-35 demographic. Leveraging precise location technology, it aims to enhance the experience for premium subscribers, particularly on the native iPhone app due to its high user concentration."
+                },
+                "problem": {
+                    "title": "The Idea",
+                    "text": "By reminding users of their dates and informing them about potential delays or no-shows, Bumble BeeThere enhances accountability, saves time, and sets realistic expectations, reinvigorating user interest and trust in location-based features for the long term in the ever-evolving landscape of online dating."
+                },
+                "solution": {
+                    "title": "",
+                    "text": ""
+                },
+                "process": {
+                    "title": "",
+                    "text": "",
+                    "details":[
+                    ]
+                },
+                "contributions":{
+                    "title":"Final Solution",
+                    "details": [
+                        {
+                            "title":"Date Scheduling",
+                            "contribution": "Bumble BeeThere streamlines the dating experience by smartly integrating a scheduling feature within the app. When users agree to a date, a button appears, inviting them to add the event to their Bumble Calendar. This efficient tool takes the hassle out of date management, ensuring that agreed-upon meetups are effortlessly tracked and organized, within the familiar environment of the Bumble app.", 
+                            "contributionImage": "../assets/scheduling.png",
+                            "imageAlt":"image description"
+                        },
+                        {
+                            "title":"Reliability Rating",
+                            "contribution": "Bumble BeeThere introduces a Reliability Rating feature, adding an extra layer of honest transparency to the dating experience. This 1-5 scale on user profiles indicates their likelihood of showing up to a date, with the score adjusting based on their punctuality and attendance history. Users who consistently honor their commitments see their scores rise, enhancing their appeal for future dates. This system not only rewards reliability but also empowers users to make informed decisions, fostering a more trustworthy and dependable dating community.", 
+                            "contributionImage": "../assets/reliability.png",
+                            "imageAlt":"image description"
+                        },
+                        {
+                            "title":"Watch Integration",
+                            "contribution": "Bumble BeeThere seamlessly integrates with the Apple Watch, using location technology to detect when users are en route to their date. This smart feature prompts the wearer to confirm their departure, celebrating timely confirmations. Upon confirmation, it promptly informs the other party of the user's status, fostering a culture of punctuality and clear communication. This integration not only enhances user convenience but also adds a layer of reassurance, keeping both parties informed and connected every step of the way.", 
+                            "contributionImage": "../assets/watch.png",
+                            "imageAlt":"image description"
+                        }
+                    ]
+                },
+                "reflection":{
+                    "title": "",
+                    "text":""
+                }
+            }
+        },
+
+
+
+        {
+            "name": "Haptic Glove For Physical Therapy",
+            "index":1,
+            "tagLine": "Improving activity learning and adhesion through continuous haptic feedback and feed-forward.",
+            "image": "../assets/placeholder.webp",
+            "expanded": false,
+            "details": {
+                "brief":{
+                    "title": "",
+                    "text": ""
+                },
+                "problem": {
+                    "title": "",
+                    "text": ""
+                },
+                "solution": {
+                    "title": "",
+                    "text": ""
+                },
+                "process": {
+                    "title": "",
+                    "text": "",
+                    "details":[
+
+                    ]
+                },
+                "contributions":{
+                    "title":"",
+                    "details": [
+                        {
+                            "contribution": "", 
+                            "contributionImage": "../assets/placeholder.webp"
+                        },
+                        {
+                            "contribution": "", 
+                            "contributionImage": "../assets/placeholder.webp"
+                        },
+                        {
+                            "contribution": "", 
+                            "contributionImage": "../assets/placeholder.webp"
+                        }
+                    ]
+                }, 
+                "reflection":{
+                    "title": "",
+                    "text":""
+                }
+            }
+        },
+
+        {
+            "name": "Bumble BeeThere BACKUP",
+            "index":5,
             "tagLine": "A new location based paradigm for Bumble's app.",
             "image": "../assets/Bumble_Thumbnail.png",
             "expanded": false,
@@ -275,9 +333,9 @@
                             "imageAlt":"image description"
                         }
                     ]
-                }, 
+                },
                 "reflection":{
-                    "title": "Reflection",
+                    "title": "",
                     "text":""
                 }
             }

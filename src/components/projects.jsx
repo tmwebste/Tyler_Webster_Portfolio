@@ -11,11 +11,6 @@ class Projects extends Component {
         if (this.props.selectedProjectIndex == null) {
             return (
                 <section id='projects-grid'>
-                    {/* <Project expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[4]}>
-                        <a href='https://docs.google.com/presentation/d/1O0H9u7qRRIuUSWhYjBNVIALaNORenprSxH8SBbdq3fg/edit#slide=id.p1' target='_blank'>Google Slides Presentation</a>
-                        <br></br>
-                        <a href='https://www.figma.com/file/0IZVinQ8hbEQbUtDY1qv2k/Bumble---Advanced-IXD?type=design&node-id=339%3A9187&mode=design&t=gKJQaeYuDw7It2Wp-1 ' target='_blank'>Figma File</a>
-                    </Project> */}
                     <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[0]} >
                         <a href='https://tmwebste.github.io/pui_project/' target='_blank'>Play the game</a>
                     </Project>
@@ -23,7 +18,14 @@ class Projects extends Component {
                         {/* <a href='https://tmwebste.github.io/pui_project/' target='_blank'>Play the game</a> */}
                     </Project>
                     <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[2]}></Project>
-                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[3]}></Project>
+                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[3]}>
+                    <a href='https://docs.google.com/presentation/d/1O0H9u7qRRIuUSWhYjBNVIALaNORenprSxH8SBbdq3fg/edit#slide=id.p1' target='_blank'>Google Slides Presentation</a>
+                        <br></br>
+                        <a href='https://www.figma.com/file/0IZVinQ8hbEQbUtDY1qv2k/Bumble---Advanced-IXD?type=design&node-id=339%3A9187&mode=design&t=gKJQaeYuDw7It2Wp-1 ' target='_blank'>Figma File</a>
+                    </Project>
+                    {/* <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[4]}>
+
+                    </Project> */}
                 </section>
             )
         }
@@ -47,8 +49,18 @@ class Projects extends Component {
                 )
             case 3:
                 return (
-                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[3]} ></Project>
+                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[3]} >
+                        <a href='https://docs.google.com/presentation/d/1O0H9u7qRRIuUSWhYjBNVIALaNORenprSxH8SBbdq3fg/edit#slide=id.p1' target='_blank'>Google Slides Presentation</a>
+                        <br></br>
+                        <a href='https://www.figma.com/file/0IZVinQ8hbEQbUtDY1qv2k/Bumble---Advanced-IXD?type=design&node-id=339%3A9187&mode=design&t=gKJQaeYuDw7It2Wp-1 ' target='_blank'>Figma File</a>
+
+                    </Project>
                 )
+            // case 4:
+            //     return (
+            //         <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[4]}>
+            //         </Project>
+            //     )
             // case 4:
             //     return (
             //         <Project expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[4]} >

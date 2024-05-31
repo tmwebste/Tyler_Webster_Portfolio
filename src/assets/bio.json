@@ -1,11 +1,16 @@
 {
     "bio":{
-        "title":"About Me",
+        "title":"",
         "items":[
             {
                 "title":"What drives me?",
                 "image":"../assets/bio1.jpeg",
                 "text":"I am an engineer and habitual tinkerer who is passionate about the technical aspects of creating systems. This pursuit of creating has led me to develop skills in 3D modeling, rapid prototyping, PCB design, embedded systems, and software development. During my undergraduate education in engineering I worked on a wearable research project where I created a haptic feedback device aimed at improving healing outcomes for physical therapy patients. After completing my undergraduate degree I was employed as an electrical power engineer where I worked on the development of critical infrastructure in the data center space. Now at Carnegie Mellon, I'm focused on enhancing my design expertise and broadening my creative horizons."
+            },
+            {
+                "title":"test",
+                "image":"../assets/Tyler_Webster.jpg",
+                "test":""
             }
         ]
     }
