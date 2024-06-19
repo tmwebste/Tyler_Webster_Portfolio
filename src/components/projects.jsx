@@ -12,16 +12,22 @@ class Projects extends Component {
             return (
                 <section id='projects-grid'>
                     <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[0]} >
-                        <a href='https://tmwebste.github.io/pui_project/' target='_blank'>Play the game</a>
+                        
+                        <a href='https://www.figma.com/design/PzaQu3oAZArzXttEJY3zL7/Wireframes?node-id=303-1449&t=snWiR3a9THoLhXhd-1 ' target='_blank'>Figma File</a>
+                        
                     </Project>
                     <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[1]} >
                         {/* <a href='https://tmwebste.github.io/pui_project/' target='_blank'>Play the game</a> */}
+                        
                     </Project>
-                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[2]}></Project>
-                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[3]}>
-                    <a href='https://docs.google.com/presentation/d/1O0H9u7qRRIuUSWhYjBNVIALaNORenprSxH8SBbdq3fg/edit#slide=id.p1' target='_blank'>Google Slides Presentation</a>
+                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[2]}>
+                        <a href='https://docs.google.com/presentation/d/1O0H9u7qRRIuUSWhYjBNVIALaNORenprSxH8SBbdq3fg/edit#slide=id.p1' target='_blank'>Google Slides Presentation</a>
                         <br></br>
                         <a href='https://www.figma.com/file/0IZVinQ8hbEQbUtDY1qv2k/Bumble---Advanced-IXD?type=design&node-id=339%3A9187&mode=design&t=gKJQaeYuDw7It2Wp-1 ' target='_blank'>Figma File</a>
+                    </Project>
+                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[3]}>
+                    <a href='https://tmwebste.github.io/pui_project/' target='_blank'>Play the game</a>
+                    
                     </Project>
                     {/* <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[4]}>
 
@@ -34,7 +40,7 @@ class Projects extends Component {
             case 0:
                 return (
                     <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[0]} >
-                        <a href='https://tmwebste.github.io/pui_project/' target='_blank'>Play the game</a>
+                        <a href='https://www.figma.com/design/PzaQu3oAZArzXttEJY3zL7/Wireframes?node-id=303-1449&t=snWiR3a9THoLhXhd-1 ' target='_blank'>Figma File</a>
                     </Project>
                 )
             case 1:
@@ -45,14 +51,17 @@ class Projects extends Component {
                 )
             case 2:
                 return (
-                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[2]} ></Project>
+                    <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[2]} >
+                        <a href='https://docs.google.com/presentation/d/1O0H9u7qRRIuUSWhYjBNVIALaNORenprSxH8SBbdq3fg/edit#slide=id.p1' target='_blank'>Google Slides Presentation</a>
+                        <br></br>
+                        <a href='https://www.figma.com/file/0IZVinQ8hbEQbUtDY1qv2k/Bumble---Advanced-IXD?type=design&node-id=339%3A9187&mode=design&t=gKJQaeYuDw7It2Wp-1 ' target='_blank'>Figma File</a>
+                    </Project>
                 )
             case 3:
                 return (
                     <Project incrementProjectIndex={this.props.incrementProjectIndex} expandCollapseProject={this.props.expandCollapseProject} project={this.props.projects[3]} >
-                        <a href='https://docs.google.com/presentation/d/1O0H9u7qRRIuUSWhYjBNVIALaNORenprSxH8SBbdq3fg/edit#slide=id.p1' target='_blank'>Google Slides Presentation</a>
-                        <br></br>
-                        <a href='https://www.figma.com/file/0IZVinQ8hbEQbUtDY1qv2k/Bumble---Advanced-IXD?type=design&node-id=339%3A9187&mode=design&t=gKJQaeYuDw7It2Wp-1 ' target='_blank'>Figma File</a>
+                        {/* <iframe classname="gpt-game" src="https://tmwebste.github.io/pui_project/"></iframe> */}
+                        <a href='https://tmwebste.github.io/pui_project/' target='_blank'>Play the game</a>
 
                     </Project>
                 )

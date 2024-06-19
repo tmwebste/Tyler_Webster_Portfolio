@@ -1,24 +1,24 @@
 {
     "projects": [
-        
+
         {
-            "name": "OpenAI Powered Murder Mystery Game",
+            "name": "Ford Intelliride",
             "index":0,
-            "tagLine": "Dynamically generating game scenarios and character responses via Open AI.",
-            "image": "../assets/AI_Mystery.png",
+            "tagLine": " An autonomous electric bicycle experience",
+            "image": "../assets/intelliride/final_test.jpg",
             "expanded": false,
             "details": {
                 "brief":{
                     "title": "Project Brief",
-                    "text": ""
+                    "text": "Our team was tasked with developing a prototype system prototype that seamlessly integrates physical and digital experiences for a future fully autonomous electric bicycle."
                 },
                 "problem": {
-                    "title": "",
-                    "text": ""
+                    "title": "The Problem",
+                    "text": "Autonomous bikes are not yet available in the market and have the potential to revolutionize commuting. Building trust and ensuring transparency are crucial for the adoption of autonomous bike systems. In addition to these technological considerations, commuters are impacted by several shortcomings in the bicycle industry. Navigation systems often fail to align with how they plan routes based on familiarity, road safety, and traffic conditions. Cyclists frequently use their phones while riding for navigation and communication, causing distractions and posing significant safety risks. The clutter caused by mounting these devices to the handlebars can lead to suboptimal handling and reduce a rider’s ability to take swift actions in the event of an emergency. "
                 },
                 "solution": {
-                    "title": "",
-                    "text": ""
+                    "title": "The Solution",
+                    "text": "Our system is designed to facilitate an efficient commute by optimizing navigation and displaying important notifications directly on the bike’s dashboard. To reduce cognitive load, we integrated essential features into a single screen, eliminating the need for multiple devices while riding. Riders can select route preferences in the accompanying phone app, tailoring their navigation to their priorities. The app also allows users to provide feedback, enhancing future routing accuracy. When connected to the bike, the display shows important phone notifications, which users can respond to via voice control. Our design prioritizes simplicity to minimize distractions, enabling riders to start their journey quickly and stay safe throughout their commute."
                 },
                 "process": {
                     "title": "",
@@ -31,65 +31,28 @@
                     "title":"",
                     "details": [
                         {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title":"Simplified Home Screen",
+                            "contribution": "The screen was placed on the lower part of the bicycle stem to avoid obstructing the rider’s view. Critical information such as speed, battery status, and autonomous status is prioritized in the top bar for easy skimming. Based on feedback about complex e-bike controls, we simplified the home screen to reduce cognitive load. The home screen features three key tabs: Home for speed and bike stats, Map for navigation, and Music. Additionally, a shortcut for voice control is included. The display can be operated via touchscreen or a trackpad interface near the rider's thumb on the handlebars for intuitive control.", 
+                            "contributionImage": "../assets/intelliride/home_screen.png",
+                            "imageAlt":"image description"
+                        },                        
+                        {
+                            "title":"Autonomy Spectrum",
+                            "contribution": "The bike is designed to keep users in control, even when in fully autonomous mode. To achieve this, we defined autonomy across individual spectrums for acceleration, steering, and braking. This means the autonomous system can adjust its influence based on user input, allowing riders to override specific aspects of the bike’s operation at any time. For example, if a user steers away from the autonomous path, the bike will still manage acceleration and braking, adjusting accordingly.", 
+                            "contributionImage": "../assets/intelliride/auto_spectrum.gif",
+                            "imageAlt":"image description"
                         },
                         {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title":"Speed Control And Autopilot",
+                            "contribution": "The bike offers two modes: \"Smart Speed Control\" and \"Autopilot.\" In \"Smart Speed Control,\" similar to smart cruise control in cars, the bike autonomously handles acceleration and braking to ensure rider safety, while the rider controls the steering. \"Autopilot\" is a fully autonomous mode where the bike manages acceleration, braking, and steering, available only when a destination is set, reducing navigation risks and improving system predictability.", 
+                            "contributionImage": "../assets/intelliride/speed_auto.gif",
+                            "imageAlt":"image description"
                         },
                         {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
-                        }
-                    ]
-                }, 
-                "reflection":{
-                    "title": "",
-                    "text":""
-                }
-            }
-        },
-        {
-            "name": "Open Source Mechanical Macropad",
-            "index":1,
-            "tagLine": "Custom macro pad designed to improve desktop productivity",
-            "image": "../assets/placeholder.webp",
-            "expanded": false,
-            "details": {
-                "brief":{
-                    "title": "",
-                    "text": ""
-                },
-                "problem": {
-                    "title": "",
-                    "text": ""
-                },
-                "solution": {
-                    "title": "",
-                    "text": ""
-                },
-                "process": {
-                    "title": "",
-                    "text": "",
-                    "details":[
-
-                    ]
-                },
-                "contributions":{
-                    "title":"",
-                    "details": [
-                        {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
-                        },
-                        {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
-                        },
-                        {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title":"Smartphone Integration",
+                            "contribution": "In the app, users can provide feedback on their routes, and paths from riders with similar preferences are aggregated to optimize recommendations. The phone can be connected via USB or Bluetooth, with notifications displayed on the bike's screen, allowing voice command responses. Calendar events and text messages with addresses are temporarily added to starred locations for easy navigation. This approach ensured personalized, real-time route recommendations and enhanced user convenience and safety.", 
+                            "contributionImage": "../assets/intelliride/iphone_app.png",
+                            "imageAlt":"image description"
                         }
                     ]
                 }, 
@@ -101,7 +64,7 @@
         },
         {
             "name": "Precision Agriculture for Vineyard Frost Protection",
-            "index":2,
+            "index":1,
             "tagLine": "Harnessing technology to provide small-scale vineyards with an affordable, efficient solution for early frost detection, enhancing crop protection and economic sustainability.",
             "image": "../assets/Vineyard/vineyardThumbnail.jpg",
             "expanded": false,
@@ -156,7 +119,7 @@
         },
         {
             "name": "Bumble BeeThere",
-            "index":3,
+            "index":2,
             "tagLine": "A new location based paradigm for Bumble's app.",
             "image": "../assets/Bumble_Thumbnail.png",
             "expanded": false,
@@ -208,7 +171,56 @@
                 }
             }
         },
+        
+        {
+            "name": "OpenAI Powered Murder Mystery Game",
+            "index":3,
+            "tagLine": "Dynamically generating game scenarios and character responses via Open AI.",
+            "image": "../assets/AI_Mystery.png",
+            "expanded": false,
+            "details": {
+                "brief":{
+                    "title": "Project Brief",
+                    "text": "This project was a personal experiment with OpenAI where I created a text based murder mystery game."
+                },
+                "problem": {
+                    "title": "Overview",
+                    "text": "This game utilizes dynamically generated themes, plotlines and characters. Players are tasked with determining who commited the murder by interogating characters. Character responses are automatically generated based on their profile and the game story."
+                },
+                "solution": {
+                    "title": "",
+                    "text": ""
+                },
+                "process": {
+                    "title": "",
+                    "text": "",
+                    "details":[
 
+                    ]
+                },
+                "contributions":{
+                    "title":"",
+                    "details": [
+                        {
+                            "contribution": "", 
+                            "contributionImage": ""
+                        },
+                        {
+                            "contribution": "", 
+                            "contributionImage": ""
+                        },
+                        {
+                            "contribution": "", 
+                            "contributionImage": ""
+                        }
+                    ]
+                }, 
+                "reflection":{
+                    "title": "",
+                    "text":""
+                }
+            }
+        },
 
 
         {

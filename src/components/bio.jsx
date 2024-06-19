@@ -22,12 +22,13 @@ class Bio extends Component {
                     <h1 id='tagline'>Innovative Engineering: Transforming Concepts into Technical Realities with Precision and Imagination.</h1>
                
                     <div className='see-more-div'>
-                        {!this.props.expanded ? 
+                        {!this.props.expanded && 
                         (
                             <button className='see-more' onClick={this.props.expandBio} >More About Me</button>
-                        ):(
-                            <button className='see-more' onClick={this.props.expandBio} >Less About Me</button>
                         )}
+                        {/* :(
+                             <button className='see-more' onClick={this.props.expandBio} >Less About Me</button>
+                        ) */}
                     </div>
                 </div>
 
@@ -38,7 +39,7 @@ class Bio extends Component {
                     <section className='bio-expanded'>
                         <h1 className='bio-header'>{this.props.bio.title}</h1>
                         {this.props.bio.items.map((bioItem, index) => (
-                            <article className="project-expanded-bottom">
+                            <article className="bio-expanded-bottom">
                                 <div  key={index} className='bio-expanded-image'>
                                     <img className='bio-image' src={bioItem.image} alt='bio image'></img>
                                 </div>

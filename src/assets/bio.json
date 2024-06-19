@@ -8,9 +8,17 @@
                 "text":"I am an engineer and habitual tinkerer who is passionate about the technical aspects of creating systems. This pursuit of creating has led me to develop skills in 3D modeling, rapid prototyping, PCB design, embedded systems, and software development. During my undergraduate education in engineering I worked on a wearable research project where I created a haptic feedback device aimed at improving healing outcomes for physical therapy patients. After completing my undergraduate degree I was employed as an electrical power engineer where I worked on the development of critical infrastructure in the data center space. Now at Carnegie Mellon, I'm focused on enhancing my design expertise and broadening my creative horizons."
             },
             {
-                "title":"test",
+                "title":"Technology Driven Design Solutions",
                 "image":"../assets/Tyler_Webster.jpg",
-                "test":""
+                "text":"With a robust technical background and a passion for crafting exceptional user experiences, I excel at merging innovative design with practical implementation. My expertise in experience design allows me to develop solutions that are not only user-centric but also technically feasible and efficient. By leveraging my technical skills, I ensure that every experience I create is rooted in real-world applicability, facilitating a seamless transition from concept to execution. This unique blend of creativity and technical proficiency enables me to deliver intuitive, functional, and engaging experiences that consistently meet and exceed user and client expectations."
+            }
+
+        ],
+        "archive":[
+            {
+                "title":"SNAP to HCI",
+                "image":"../assets/grad_photo.jpg",
+                "text":"Growing up under challenging circumstances has profoundly shaped my perspective and fueled my passion for creating inclusive and accessible designs. My personal experiences have instilled in me a deep empathy for underrepresented groups, and this empathy drives my commitment to ensuring that every design solution I create is considerate of diverse audiences. I strive to develop user experiences that not only meet the functional needs of all users but also resonate on a deeper, more personal level. By leading with empathy and inclusivity, I aim to create designs that make a positive impact and foster a sense of belonging for everyone."
             }
         ]
     }

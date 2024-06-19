@@ -62,10 +62,10 @@ class Project extends Component {
                         <h2 className='subsection-header'>{this.props.project.details.contributions.title}</h2>
                         {this.props.project.details.contributions.details.map((contribution, index) => (
                             <article className="project-expanded-bottom">
-                                <div className='project-expanded-summary'>
+                                <div className='project-contribution-left'>
                                     <img className='contribution-image' src={contribution.contributionImage} alt={contribution.imageAlt}></img>
                                 </div>
-                                <article className='project-brief'>
+                                <article className='project-contribution-right'>
                                     <h3 key={index}>{contribution.title}</h3>
                                     {/* <h2 key={index}>{}</h3> */}
                                     <p key={index}>{contribution.contribution}</p>
@@ -75,7 +75,10 @@ class Project extends Component {
                         ))}
                         <h2 className='subsection-header'>{this.props.project.details.reflection.title}</h2>
                         <p>{this.props.project.details.reflection.text}</p>
-                        {this.props.children}
+                        <div className='child-links'>
+                            {this.props.children}
+                        </div>
+                        
                     </article>
                     <div className='see-project-div'>
                         <>
