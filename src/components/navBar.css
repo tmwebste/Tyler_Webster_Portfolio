@@ -6,20 +6,20 @@
 
 .custom-nav {
     /* z-index: 4; */
-    width: 100dvw;
+    width: 100%;
     margin: 0px; 
     /* padding: 0px 10% 0px 10%; */
     /* height: 60px; */
     /* background-color: #74546A; */
     /* background-color: var(--background); */
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
 }
 
 .logo-section {
-    width: 75rem;
+    width: 65rem;
     /* padding: 1rem 0; */
     padding-left: auto;
     justify-content: left;
@@ -29,7 +29,7 @@
 
 .logo-text {
     color: var(--text-dark);
-    font-size: 20px;
+    font-size: 40px;
     font-family: var(--main-font);
     font-weight: 700;
     letter-spacing: 4;
@@ -39,7 +39,7 @@
 .menu-section {
     position: relative;
     z-index: 7;
-    width: 25rem;
+    width: 35rem;
     /* padding: 2rem 1rem; */
     display: flex;
     margin: 0px;
@@ -54,7 +54,7 @@
     text-align: center;
     text-justify: center;
     color: var(--text-dark);
-    font-size: 20px;
+    font-size: 30px;
     font-family: var(--main-font);
     font-weight: 400;
     letter-spacing: 0.1875rem; /* Adjust as needed */
@@ -89,20 +89,22 @@
 
     .logo-section{
         width: 100%;
-        padding-left: 10px;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .logo-text {
+        font-size: .9rem;
     }
 
     .menu-section{
         width: 100%;
-        padding-left: 10px;
+        padding: 10px;
     }
 
     .menu-item{
         text-justify: left;
         text-align: left;
+        font-size: .8rem; /* Adjust font size for smaller screens */
     }
 
-    .menu-item {
-        font-size: .75rem; /* Adjust font size for smaller screens */
-    }
 }

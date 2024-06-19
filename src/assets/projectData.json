@@ -52,7 +52,7 @@
         },
         {
             "name": "Open Source Mechanical Macropad",
-            "index":2,
+            "index":1,
             "tagLine": "Custom macro pad designed to improve desktop productivity",
             "image": "../assets/placeholder.webp",
             "expanded": false,
@@ -101,7 +101,7 @@
         },
         {
             "name": "Precision Agriculture for Vineyard Frost Protection",
-            "index":3,
+            "index":2,
             "tagLine": "Harnessing technology to provide small-scale vineyards with an affordable, efficient solution for early frost detection, enhancing crop protection and economic sustainability.",
             "image": "../assets/Vineyard/vineyardThumbnail.jpg",
             "expanded": false,
@@ -156,7 +156,7 @@
         },
         {
             "name": "Bumble BeeThere",
-            "index":4,
+            "index":3,
             "tagLine": "A new location based paradigm for Bumble's app.",
             "image": "../assets/Bumble_Thumbnail.png",
             "expanded": false,
@@ -213,7 +213,7 @@
 
         {
             "name": "Haptic Glove For Physical Therapy",
-            "index":1,
+            "index":5,
             "tagLine": "Improving activity learning and adhesion through continuous haptic feedback and feed-forward.",
             "image": "../assets/placeholder.webp",
             "expanded": false,
@@ -263,7 +263,7 @@
 
         {
             "name": "Bumble BeeThere BACKUP",
-            "index":5,
+            "index":6,
             "tagLine": "A new location based paradigm for Bumble's app.",
             "image": "../assets/Bumble_Thumbnail.png",
             "expanded": false,
