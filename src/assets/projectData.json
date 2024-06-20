@@ -201,18 +201,7 @@
                 "contributions":{
                     "title":"",
                     "details": [
-                        {
-                            "contribution": "", 
-                            "contributionImage": ""
-                        },
-                        {
-                            "contribution": "", 
-                            "contributionImage": ""
-                        },
-                        {
-                            "contribution": "", 
-                            "contributionImage": ""
-                        }
+
                     ]
                 }, 
                 "reflection":{
