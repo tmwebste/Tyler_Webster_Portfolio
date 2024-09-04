@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './projects.css'
+import Carousel from './carousel';
 
 
 class Project extends Component {
@@ -42,23 +43,36 @@ class Project extends Component {
                         {/* <p>{this.props.project.details.brief}</p> */}
                         <h2 className='subsection-header'>{this.props.project.details.problem.title}</h2>
                         <p>{this.props.project.details.problem.text}</p>
-                        <h2 className='subsection-header'>{this.props.project.details.solution.title}</h2>
-                        <p>{this.props.project.details.solution.text}</p>
+
                         <h2 className='subsection-header'>{this.props.project.details.process.title}</h2>
                         <p>{this.props.project.details.process.text}</p>
+                        <img className='project-icon' src={this.props.project.details.process.image} alt={this.props.project.details.process.imageAlt}></img>
                         {this.props.project.details.process.details.map((process, index) => (
                             <article className="project-expanded-bottom">
 
-                                <article className='project-brief'>
-                                    <h3 key={index}>{process.title}</h3>
+                                <div className='project-contribution-left'>
+                                    <img className='contribution-image' src={process.image} alt={process.imageAlt}></img>
+                                </div>
+                                <article className='project-contribution-right'>
+                                    <h3  >{process.title}</h3>
                                     <p key={index}>{process.text}</p>
                                 </article>
-                                <div className='process-right'>
-                                    <img className='process-image' src={process.image} alt={process.imageAlt}></img>
-                                </div>
+                                
 
                             </article>
                         ))}
+                        {/* Add Carousel component only if the prop "carousel" is defined and true */}
+                        {this.props.carousel && (
+                            
+                            <div className='carousel-container'>
+                                <h2 className='subsection-header'>Key Archetypes</h2>
+                                <Carousel />
+                            </div>
+                        )}
+                        
+                        <h2 className='subsection-header'>{this.props.project.details.solution.title}</h2>
+                        <p>{this.props.project.details.solution.text}</p>
+
                         <h2 className='subsection-header'>{this.props.project.details.contributions.title}</h2>
                         {this.props.project.details.contributions.details.map((contribution, index) => (
                             <article className="project-expanded-bottom">
@@ -125,29 +139,6 @@ class Project extends Component {
             <>
                 {this.renderProject()}
             </>
-            // <article className='project'>
-            //     <article className='project-top'>
-            //         {this.props.project.image && (
-            //             <img className='project-icon' src={this.props.project.image} alt={this.props.project.name + "icon"}></img>
-            //         )}
-            //     </article>
-            //     <article className='project-bottom'>
-            //         <div className='project-summary'>
-            //             <h2 className='project-name'>{this.props.project.name}</h2>
-            //             <h3 className='project-tag'>{this.props.project.tagLine}</h3>
-            //             {this.props.children}
-            //         </div>
-            //         <div className='see-project-div'>
-            //             {this.props.project.expanded ? (
-            //                 <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See Less</button>
-            //             ) : (
-            //                 <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See More</button>
-            //             )}
-
-            //         </div>
-            //     </article>
-
-            // </article>
         )
     }
 }

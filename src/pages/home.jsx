@@ -10,7 +10,7 @@ import BGAccent from '../assets/Vector_BG.svg'
 // import AIMystery from '../assets/AI_Mystery.png'
 import projectJson from '../assets/projectData.json'
 import bioJson from '../assets/bio.json'
-import workJson from '../assets/workData.json'
+
 
 class Home extends Component {
     constructor() {
@@ -84,7 +84,7 @@ class Home extends Component {
     }
 
     incrementProjectIndex = (increment) => {
-        const numProjects = 3;
+        const numProjects = 4;
         this.resetView();
         let newFocus = 'project'
 
@@ -188,6 +188,7 @@ class Home extends Component {
             <div className='main'>
                 <NavBar goHome={this.resetView} expandBio={this.expandBio} expandProjectSection={this.expandProjectSection}></NavBar>
                 {this.renderFocused()}
+                
                 <Footer></Footer>
             </div>
         )

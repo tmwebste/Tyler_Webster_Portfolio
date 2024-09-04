@@ -2,8 +2,88 @@
     "projects": [
 
         {
+            "name": "MARi x MHCI Capstone Project",
+            "index": 0,
+            "tagLine": "Enhancing Employee and Manager Goal-Setting through MARi's Platform",
+            "image": "../assets/mari/mari_hero.svg",
+            "expanded": false,
+            "details": {
+                "brief": {
+                    "title": "Project Brief",
+                    "text": "CMU MHCI Capstone Project, focused on understanding goal-setting and up-skilling experiences for employees and managers using MARi's platform. We explored how MARi’s AI capabilities can support managers in helping their employees achieve career goals."
+                },
+                
+                "problem": {
+                    "title": "The Problem",
+                    "text": "Current proxy-based learning methods, which rely heavily on predefined metrics and generalizations, often fail to capture a comprehensive understanding of an individual's true skills and capabilities. These methods typically assess employees based on surface-level achievements and standardized assessments rather than personalized growth metrics. As a result, managers struggle to provide effective support that nurtures an employee's full potential, leading to missed opportunities for personal and professional development. This not only limits the growth of an individual but also reduces overall employee effectiveness and fulfillment. Employees may feel underutilized and disengaged, as their true capabilities are neither recognized nor developed, ultimately impacting their productivity and job satisfaction."
+                },
+                "solution": {
+                    "title": "Our Solution",
+                    "text": "We proposed enhancements to MARi’s platform to offer dynamic and flexible support tools, balancing routine adherence with the need for adaptability and personalized support."
+                },
+                "process": {
+                    "title": "Research",
+                    "image":"../assets/mari/mari_process_hero.svg",
+                    "imageAlt":"5 design iterations, 40+ interviews, 30 user tesing sessions",
+                    "text": "",
+                    "details": [
+                        {
+                            "title": "Understanding the Enterprise Ecosystem",
+                            "text": "We mapped out the enterprise ecosystem, identifying key stakeholders like employees, managers, and HR, to ensure our designs met their needs.",
+                            "image": "../assets/mari/enterprise_ecosystem.svg",
+                            "imageAlt": "Enterprise ecosystem diagram"
+                        },
+                        {
+                            "title": "Identifying Trainer and Learner Archetypes",
+                            "text": "Developed trainer and learner archetypes to guide our design, ensuring that our solutions catered to different user types within the ecosystem.",
+                            "image": "../assets/placeholder.webp",
+                            "imageAlt": "Trainer and learner archetypes"
+                        },
+                        {
+                            "title": "Prototyping and Testing",
+                            "text": "Created prototypes based on our insights and tested them with users to refine the design, focusing on attributes visualization, AI recommendations, and learning progress tracking.",
+                            "image": "../assets/placeholder.webp",
+                            "imageAlt": "Prototyping and testing phases"
+                        },
+                        {
+                            "title": "Addressing Ethical Considerations",
+                            "text": "Incorporated ethical guidelines for AI use, ensuring transparency, data privacy, and bias mitigation in our designs.",
+                            "image": "../assets/placeholder.webp",
+                            "imageAlt": "Ethical considerations in AI"
+                        }
+                    ]
+                },
+                "contributions": {
+                    "title": "Final Solution",
+                    "details": [
+                        {
+                            "contribution": "Developed an AI-driven goal-setting tool that helps managers balance routine adherence with the need for personalized support.",
+                            "contributionImage": "../assets/placeholder.webp"
+                        },
+                        {
+                            "contribution": "Created a dynamic visualization system to help employees and managers track skill development and identify growth opportunities.",
+                            "contributionImage": "../assets/placeholder.webp"
+                        },
+                        {
+                            "contribution": "Proposed an attribute visualization system that aligns with user mental models, making it easier for users to understand their strengths, weaknesses, and potential career paths.",
+                            "contributionImage": "../assets/placeholder.webp"
+                        },
+                        {
+                            "contribution": "Designed a 'career playground' concept, allowing users to explore new career opportunities and pivot easily, supported by AI recommendations.",
+                            "contributionImage": "../assets/placeholder.webp"
+                        }
+                    ]
+                },
+                "reflection": {
+                    "title": "",
+                    "text": ""
+                }
+            }
+        },
+
+        {
             "name": "Ford Intelliride",
-            "index":0,
+            "index":1,
             "tagLine": " An autonomous electric bicycle experience",
             "image": "../assets/intelliride/final_test.jpg",
             "expanded": false,
@@ -64,7 +144,7 @@
         },
         {
             "name": "Precision Agriculture for Vineyard Frost Protection",
-            "index":1,
+            "index":2,
             "tagLine": "Harnessing technology to provide small-scale vineyards with an affordable, efficient solution for early frost detection, enhancing crop protection and economic sustainability.",
             "image": "../assets/Vineyard/vineyardThumbnail.jpg",
             "expanded": false,
@@ -119,7 +199,7 @@
         },
         {
             "name": "Bumble BeeThere",
-            "index":2,
+            "index":3,
             "tagLine": "A new location based paradigm for Bumble's app.",
             "image": "../assets/Bumble_Thumbnail.png",
             "expanded": false,
@@ -174,7 +254,7 @@
         
         {
             "name": "OpenAI Powered Murder Mystery Game",
-            "index":3,
+            "index":4,
             "tagLine": "Dynamically generating game scenarios and character responses via Open AI.",
             "image": "../assets/AI_Mystery.png",
             "expanded": false,
@@ -211,6 +291,9 @@
             }
         },
 
+
+
+        
 
         {
             "name": "Haptic Glove For Physical Therapy",
