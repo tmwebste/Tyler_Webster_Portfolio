@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSprings, animated } from "react-spring";
 import { useSwipeable } from 'react-swipeable';
+import { useMediaQuery } from 'react-responsive';
 import './carousel.css'; // For the CSS part
 
 const Carousel = () => {
@@ -32,15 +33,40 @@ const Carousel = () => {
     trackMouse: true,
   });
 
+  // Media query to detect if the screen width is mobile or not
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  // Conditionally render based on whether it's mobile or desktop
   return (
-    <div className="card-carousel">
-      {svgs.map((svg, index) => (
-        <div key={index} className="card">
-          <img src={svg} alt={`SVG ${index}`} />
+    <>
+      {isMobile ? (
+        // Mobile version (swipeable)
+        <div {...handlers} className="card-carousel">
+          {svgs.map((svg, index) => (
+            <div
+              key={index}
+              className={`card ${index === currentIndex ? 'active' : ''}`}
+              style={{
+                transform: `translateX(${(index - currentIndex) * 100}%)`,
+              }}
+            >
+              <img src={svg} alt={`SVG ${index}`} />
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      ) : (
+        // Desktop version (hover interaction)
+        <div className="card-carousel">
+          {svgs.map((svg, index) => (
+            <div key={index} className="card">
+              <img src={svg} alt={`SVG ${index}`} />
+            </div>
+          ))}
+        </div>
+      )}
+    </>
   );
 };
+
 
 export default Carousel;

@@ -56,45 +56,37 @@
 @media (max-width: 768px) {
     .card-carousel {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start; /* Align cards to start to facilitate swipe */
         align-items: center;
-        /* height: 300px; */
-        width:200%;
-        /* position: relative; */
-       
-        padding: 1px;
-        margin: 0px;
-        /* margin-top: 10px; */
+        width: 100%; /* Set width to 100% to fit the viewport */
+        overflow: hidden; /* Hide overflow for smooth swiping */
+        padding: 0;
+        margin: 0;
     }
 
     .card {
         display: flex;
-        width: 300%;
-        /* height: 300px; */
+        width: 100%; /* Each card takes full width on mobile */
         position: relative;
         align-content: center;
         justify-content: center;
-        margin: 0 1%;
-
+        margin: 0; /* No margin on mobile to avoid gaps */
+        transition: transform 0.3s ease-in-out;
+        flex-shrink: 0; /* Prevent cards from shrinking */
     }
 
     .card img {
-        width: 300px;
-        /* height: 100%; */
-        /* object-fit: contain; */
-        /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 5%; */
+        width: 100%; /* Make sure the image fits the card's width */
+        max-width: 300px; /* Optional: Max width to control image size */
+        height: auto; /* Keep aspect ratio of the image */
     }
 
     .card:hover {
-        transform: scale(1.0); /* Only the hovered card comes forward */
-
+        transform: none; /* Disable hover scaling on mobile */
     }
     
-    /* Ensure all non-hovered cards move back */
+    /* Remove hover effects on mobile */
     .card-carousel .card:not(:hover) {
-        transform: scale(1.0);
-
+        transform: none;
     }
-      
 }
