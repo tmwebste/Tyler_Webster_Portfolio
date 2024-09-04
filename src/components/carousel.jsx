@@ -47,7 +47,7 @@ const Carousel = () => {
               key={index}
               className={`card ${index === currentIndex ? 'active' : ''}`}
               style={{
-                transform: `translateX(${(index - currentIndex) * 100}%)`,
+                transform: `translateX(${(0- currentIndex) * 100}%)`,
               }}
             >
               <img src={svg} alt={`SVG ${index}`} />

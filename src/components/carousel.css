@@ -79,6 +79,7 @@
         width: 100%; /* Make sure the image fits the card's width */
         max-width: 300px; /* Optional: Max width to control image size */
         height: auto; /* Keep aspect ratio of the image */
+        margin:0;
     }
 
     .card:hover {
