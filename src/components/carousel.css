@@ -1,8 +1,30 @@
+@import "../index.css";
 
+
+/* Container to center dots under the carousel */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
   
-
+/* Dots styling */
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb; /* Default color */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
   
-
+/* Active dot styling */
+.active-dot {
+    background-color: var(--button); /* Highlight active dot */
+}
 
 
 @media (min-width: 768px) {

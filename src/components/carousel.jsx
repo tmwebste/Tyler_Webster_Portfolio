@@ -41,19 +41,31 @@ const Carousel = () => {
     <>
       {isMobile ? (
         // Mobile version (swipeable)
-        <div {...handlers} className="card-carousel">
-          {svgs.map((svg, index) => (
-            <div
-              key={index}
-              className={`card ${index === currentIndex ? 'active' : ''}`}
-              style={{
-                transform: `translateX(${(0- currentIndex) * 100}%)`,
-              }}
-            >
-              <img src={svg} alt={`SVG ${index}`} />
+        <>
+            <div {...handlers} className="card-carousel">
+            {svgs.map((svg, index) => (
+                <div
+                key={index}
+                className={`card ${index === currentIndex ? 'active' : ''}`}
+                style={{
+                    transform: `translateX(${(0- currentIndex) * 100}%)`,
+                }}
+                >
+                <img src={svg} alt={`SVG ${index}`} />
+                </div>
+            ))}
             </div>
-          ))}
-        </div>
+            {/* //Pagination Dots */}
+            <div className="dots-container">
+            {svgs.map((_, index) => (
+                <span
+                key={index}
+                className={`dot ${index === currentIndex ? 'active-dot' : ''}`}
+                onClick={() => goToSlide(index)}
+                ></span>
+            ))}
+            </div>
+        </>
       ) : (
         // Desktop version (hover interaction)
         <div className="card-carousel">
