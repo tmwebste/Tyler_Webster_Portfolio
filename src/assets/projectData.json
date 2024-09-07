@@ -2,7 +2,7 @@
     "projects": [
 
         {
-            "name": "MARi x MHCI Capstone Project",
+            "name": "MHCI Capstone Project - MARi AI",
             "index": 0,
             "tagLine": "Enhancing Employee and Manager Goal-Setting through MARi's Platform",
             "image": "../assets/mari/mari_hero.svg",
@@ -10,7 +10,7 @@
             "details": {
                 "brief": {
                     "title": "Project Brief",
-                    "text": "CMU MHCI Capstone Project, focused on understanding goal-setting and up-skilling experiences for employees and managers using MARi's platform. We explored how MARi’s AI capabilities can support managers in helping their employees achieve career goals."
+                    "text": "CMU MHCI Capstone Project, focused on understanding goal-setting and up-skilling experiences for employees and managers using MARi's AI fueled platform. We explored how MARi’s AI capabilities can support managers in helping their employees achieve career goals."
                 },
                 
                 "problem": {
@@ -22,55 +22,75 @@
                     "text": "We proposed enhancements to MARi’s platform to offer dynamic and flexible support tools, balancing routine adherence with the need for adaptability and personalized support."
                 },
                 "process": {
-                    "title": "Research",
+                    "title": "Key Design Considerations",
                     "image":"../assets/mari/mari_process_hero.svg",
                     "imageAlt":"5 design iterations, 40+ interviews, 30 user tesing sessions",
                     "text": "",
                     "details": [
                         {
-                            "title": "Understanding the Enterprise Ecosystem",
-                            "text": "We mapped out the enterprise ecosystem, identifying key stakeholders like employees, managers, and HR, to ensure our designs met their needs.",
+                            "title": "The Enterprise Ecosystem",
+                            "text": "The enterprise ecosystem is built on interconnected relationships between individuals and organizational roles. At the core, employees collaborate with colleagues and are guided by direct supervisors. Moving outward, HR managers ensure that human resources practices align with organizational goals, while various roles such as training managers, recruiting managers, or direct supervisors are responsible for creating and assigning training. These stakeholders influence each other, with decisions at the managerial level shaping employee development and, in turn, the overall success of the organization.",
                             "image": "../assets/mari/enterprise_ecosystem.svg",
                             "imageAlt": "Enterprise ecosystem diagram"
                         },
                         {
-                            "title": "Identifying Trainer and Learner Archetypes",
-                            "text": "Developed trainer and learner archetypes to guide our design, ensuring that our solutions catered to different user types within the ecosystem.",
-                            "image": "../assets/placeholder.webp",
-                            "imageAlt": "Trainer and learner archetypes"
+                            "title": "Spectrum of Workplace Readiness",
+                            "text": "The Spectrum of Workplace Readiness illustrates varying levels of employee motivation. On one end are highly motivated individuals focused on achieving career goals, while the other end represents those more focused on fulfilling 9-5 roles with external aspirations. Employees move fluidly along the spectrum as their motivations evolve over time and at any given time most employees fall in the middle, navigating their career paths and goals.",
+                            "image": "../assets/mari/spectrum.svg",
+                            "imageAlt": "A visual representation of the distribution of workplace readiness, highlighting varying levels of employee motivation."
                         },
                         {
-                            "title": "Prototyping and Testing",
-                            "text": "Created prototypes based on our insights and tested them with users to refine the design, focusing on attributes visualization, AI recommendations, and learning progress tracking.",
-                            "image": "../assets/placeholder.webp",
-                            "imageAlt": "Prototyping and testing phases"
+                            "title": "Defining Attributes",
+                            "text": "MARi redefines learning by focusing on attributes which represent the fundamental skills, knowledge, or abilities an individual possesses or develops over time. Instead of relying on proxy-based learning, MARi maps learning content directly to these attributes. Attributes are hierarchical in nature, ranging from broad categories like 'customer service' to more specific sub-skills. This structure allows for precise tracking and development of employee competencies, ensuring that training aligns with both broad organizational needs and individual growth areas.",
+                            "image": "../assets/mari/attribute.svg",
+                            "imageAlt": "Hierarchical attribute structure and mapping"
                         },
                         {
-                            "title": "Addressing Ethical Considerations",
-                            "text": "Incorporated ethical guidelines for AI use, ensuring transparency, data privacy, and bias mitigation in our designs.",
-                            "image": "../assets/placeholder.webp",
-                            "imageAlt": "Ethical considerations in AI"
+                            "title": "Explainable AI",
+                            "text": "To build trust with AI, MARi focuses on explainability. Users need to understand why certain recommendations are made to feel confident in the results. By providing contextual descriptions and visual aids, we demystify AI's decision-making process. This transparency allows learners to see how specific courses or skills align with their career goals. For example, a learner may be recommended a Zendesk course, and through explainable AI, they'll know it's because Zendesk is the most popular CRM tool in their company and aligns with their desired career transition to customer service.",
+                            "image": "../assets/mari/ai_exp.svg",
+                            "imageAlt": "Explainable AI shown in user interface"
                         }
+                        
                     ]
                 },
                 "contributions": {
                     "title": "Final Solution",
                     "details": [
                         {
-                            "contribution": "Developed an AI-driven goal-setting tool that helps managers balance routine adherence with the need for personalized support.",
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title": "Employee - Collaborative Kanban Style Learning Tracker",
+                            "contribution": "Employees and managers work together to create and manage training plans through a Kanban-style interface. This familiar and intuitive system allows for the agile development of training paths, with clear visibility into progress. Both employees and managers can track milestones, assign tasks, and provide resources in a transparent, collaborative environment.",
+                            "contributionImage": "../assets/mari/kanban.svg"
                         },
                         {
-                            "contribution": "Created a dynamic visualization system to help employees and managers track skill development and identify growth opportunities.",
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title": "Employee - Upskilling Recommendation System",
+                            "contribution": "AI-driven personalized learning recommendations with contextual descriptions and visual aids. This tool helps employees discover new training content and understand its relevance to their career growth.",
+                            "contributionImage": "../assets/mari/learn_rec.svg"
                         },
                         {
-                            "contribution": "Proposed an attribute visualization system that aligns with user mental models, making it easier for users to understand their strengths, weaknesses, and potential career paths.",
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title": "Employee - Key Moment Highlights",
+                            "contribution": "Quickly highlight specific course excerpts from internal onboarding materials and private documentations in training resource search results. This accelerates the search process for organizational-specific training content, saving employees valuable time.",
+                            "contributionImage": "../assets/mari/key_moments.svg"
                         },
                         {
-                            "contribution": "Designed a 'career playground' concept, allowing users to explore new career opportunities and pivot easily, supported by AI recommendations.",
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title": "Employee - Professional Learning Progress Tracking",
+                            "contribution": "A user profile system that visualizes learning progress, highlights key skills, and allows for customizable learning paths. It motivates employees to make informed decisions and actively engage in their professional development.",
+                            "contributionImage": "../assets/mari/emp_profile.svg"
+                        },
+                        {
+                            "title": "Manager - Training Activity Data Extraction",
+                            "contribution": "Automatically tabulate task data from internal training activities, organized and ranked by priority for trainer’s review. Enabling organizations to more effectively track the training content they are distributing to their employees.",
+                            "contributionImage": "../assets/mari/activity_data.svg"
+                        },
+                        {
+                            "title": "Manager - Skill Alignment to Training Activities",
+                            "contribution": "Automated alignment of training activities with specific skills, allowing managers to better define the connection between training content and skill development. This tool also enables customization of skills based on organizational needs.",
+                            "contributionImage": "../assets/mari/attribute_detail.svg"
+                        },
+                        {
+                            "title": "Manager - Skill Logic Canvas",
+                            "contribution": "Define the relationships between training tasks and skill development through a drag-and-drop interface. Integrated with conversational AI, this tool offers a quantitative way to assess the skills gained through training activities.",
+                            "contributionImage": "../assets/mari/logic_flow.svg"
                         }
                     ]
                 },

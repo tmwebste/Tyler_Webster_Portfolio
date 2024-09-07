@@ -1,0 +1,47 @@
+{
+    "name": "",
+    "index": 5,
+    "tagLine": "",
+    "image": "../assets/placeholder.webp",
+    "expanded": false,
+    "details": {
+        "brief": {
+            "title": "",
+            "text": ""
+        },
+        "problem": {
+            "title": "",
+            "text": ""
+        },
+        "solution": {
+            "title": "",
+            "text": ""
+        },
+        "process": {
+            "title": "",
+            "text": "",
+            "details": []
+        },
+        "final solution": {
+            "title": "Final Solution",
+            "details": [
+                {
+                    "contribution": "",
+                    "contributionImage": "../assets/placeholder.webp"
+                },
+                {
+                    "contribution": "",
+                    "contributionImage": "../assets/placeholder.webp"
+                },
+                {
+                    "contribution": "",
+                    "contributionImage": "../assets/placeholder.webp"
+                }
+            ]
+        },
+        "reflection": {
+            "title": "",
+            "text": ""
+        }
+    }
+},

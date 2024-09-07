@@ -1,0 +1,36 @@
+.see-more{
+    font-size: 20px;
+    /* padding: auto; */
+    margin: auto;
+    background-repeat:no-repeat;
+    border: none;
+    /* cursor:none; */
+    overflow: hidden;  
+    font-family: var(--main-font);
+    font-weight: 400;
+    background-color: var(--button);
+    color: var(--text-light);
+    border-radius: 50px;
+    /* width: 250px; */
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    text-justify: center;
+    outline: none;
+    border: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.see-more:focus {
+    outline:0;
+}
+
+.see-more:hover {
+    /* cursor: none; */
+    transition: transform 0.3s ease, background 0.3s ease;
+    background-color: var(--secondary);
+}
+
+.see-more:active {
+    outline: none;
+    border: none;
+}

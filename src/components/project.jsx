@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './projects.css'
 import Carousel from './carousel';
+import GradientButton from './gradientButton';
 
 
 class Project extends Component {
