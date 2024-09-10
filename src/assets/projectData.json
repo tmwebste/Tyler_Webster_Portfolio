@@ -60,37 +60,37 @@
                         {
                             "title": "Employee - Collaborative Kanban Style Learning Tracker",
                             "contribution": "Employees and managers work together to create and manage training plans through a Kanban-style interface. This familiar and intuitive system allows for the agile development of training paths, with clear visibility into progress. Both employees and managers can track milestones, assign tasks, and provide resources in a transparent, collaborative environment.",
-                            "contributionImage": "../assets/mari/kanban.svg"
+                            "contributionImage": "../assets/mari/kanban.png"
                         },
                         {
                             "title": "Employee - Upskilling Recommendation System",
                             "contribution": "AI-driven personalized learning recommendations with contextual descriptions and visual aids. This tool helps employees discover new training content and understand its relevance to their career growth.",
-                            "contributionImage": "../assets/mari/learn_rec.svg"
+                            "contributionImage": "../assets/mari/learn_rec.png"
                         },
                         {
                             "title": "Employee - Key Moment Highlights",
                             "contribution": "Quickly highlight specific course excerpts from internal onboarding materials and private documentations in training resource search results. This accelerates the search process for organizational-specific training content, saving employees valuable time.",
-                            "contributionImage": "../assets/mari/key_moments.svg"
+                            "contributionImage": "../assets/mari/key_moments.png"
                         },
                         {
                             "title": "Employee - Professional Learning Progress Tracking",
                             "contribution": "A user profile system that visualizes learning progress, highlights key skills, and allows for customizable learning paths. It motivates employees to make informed decisions and actively engage in their professional development.",
-                            "contributionImage": "../assets/mari/emp_profile.svg"
+                            "contributionImage": "../assets/mari/emp_profile.png"
                         },
                         {
                             "title": "Manager - Training Activity Data Extraction",
                             "contribution": "Automatically tabulate task data from internal training activities, organized and ranked by priority for trainer’s review. Enabling organizations to more effectively track the training content they are distributing to their employees.",
-                            "contributionImage": "../assets/mari/activity_data.svg"
+                            "contributionImage": "../assets/mari/activity_data.png"
                         },
                         {
                             "title": "Manager - Skill Alignment to Training Activities",
                             "contribution": "Automated alignment of training activities with specific skills, allowing managers to better define the connection between training content and skill development. This tool also enables customization of skills based on organizational needs.",
-                            "contributionImage": "../assets/mari/attribute_detail.svg"
+                            "contributionImage": "../assets/mari/attribute_detail.png"
                         },
                         {
                             "title": "Manager - Skill Logic Canvas",
                             "contribution": "Define the relationships between training tasks and skill development through a drag-and-drop interface. Integrated with conversational AI, this tool offers a quantitative way to assess the skills gained through training activities.",
-                            "contributionImage": "../assets/mari/logic_flow.svg"
+                            "contributionImage": "../assets/mari/logic_flow.png"
                         }
                     ]
                 },
