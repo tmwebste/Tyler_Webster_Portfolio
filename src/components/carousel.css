@@ -63,14 +63,14 @@
       
 
     .card:hover {
-        transform: scale(1.0); /* Only the hovered card comes forward */
+        transform: scale(1.0); 
         cursor: none;
         z-index: 10;
     }
     
     /* Ensure all non-hovered cards move back */
-    .card-carousel .card:not(:hover) {
-        transform: scale(0.6);
+    .card:not(:hover) {
+        transform: rotateX(0deg) rotateY(0deg) scale(0.6);
         z-index: 1;
     }
 }
