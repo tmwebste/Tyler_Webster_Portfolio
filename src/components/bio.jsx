@@ -21,15 +21,13 @@ class Bio extends Component {
                    
                     <h1 id='tagline'>Innovative Engineering: Transforming Concepts into Technical Realities with Precision and Imagination.</h1>
                
-                    <div className='see-more-div'>
+                    {/* <div className='see-more-div'>
                         {!this.props.expanded && 
                         (
                             <button className='see-more' onClick={this.props.expandBio} >More About Me</button>
                         )}
-                        {/* :(
-                             <button className='see-more' onClick={this.props.expandBio} >Less About Me</button>
-                        ) */}
-                    </div>
+                        
+                    </div> */}
                 </div>
 
             </div>

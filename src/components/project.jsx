@@ -106,7 +106,7 @@ class Project extends Component {
             )
         } else {
             return (
-                <article className='project'>
+                <article className='project' onClick={() => this.props.expandCollapseProject(this.props.project.index)}>
                     <article className='project-top'>
                         {this.props.project.image && (
                             <img className='project-icon' src={this.props.project.image} alt={this.props.project.name + "icon"}></img>
@@ -116,17 +116,18 @@ class Project extends Component {
                         <div className='project-summary'>
                             <h2 className='project-name'>{this.props.project.name}</h2>
                             <h3 className='project-tag'>{this.props.project.tagLine}</h3>
-                            {this.props.children}
+                            {/* {this.props.children} */}
                         </div>
-                        <div className='see-project-div'>
+                        {/* <div className='see-project-div'>
                             {this.props.project.expanded ? (
                                 <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See Less</button>
                             ) : (
                                 <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See More</button>
                             )}
 
-                        </div>
+                        </div> */}
                     </article>
+                    
 
                 </article>
             )

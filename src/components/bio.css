@@ -22,7 +22,7 @@
     justify-content: center;
     align-content: left;
     /* z-index: 4; */
-    width: 50%;
+    width: 30%;
     padding: 0;
     margin: 0;
 }
@@ -31,7 +31,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     padding: 0;
     margin: 0;
     text-align: left;
@@ -47,7 +47,7 @@
 }
 
 #tagline {
-    color: #1F271B;
+    color: var(--text-dark);
     font-family: var(--main-font);
     font-weight: 300;
     font-size: 2.0rem;
@@ -63,7 +63,7 @@
     margin: 0;
     filter: blur(0.1px);
     pointer-events: none;
-    filter: drop-shadow(20px -20px #F87C56) grayscale(100%);
+    filter: grayscale(100%);
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     border-radius: 25px;
 }

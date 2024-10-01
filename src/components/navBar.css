@@ -72,12 +72,6 @@
     padding: 1.5rem 0;
 }
 
-.link-img{
-    padding: 0px;
-    height: 30px;
-    margin: 0px;
-    margin-right: 40px;
-}
 
 
 @media screen and (max-width: 1000px) {
@@ -89,12 +83,15 @@
     }
 
     .logo-section{
-        width: 100%;
-        padding: 10px 10px 0px 40px;
+        width: 80%;
+        /* padding: 10px 20px 0px 60px; */
+        padding-top: 10px;
+        text-justify: center;
+        text-align: center;
     }
 
     .logo-text {
-        font-size: .9rem;
+        font-size: 1.2rem;
     }
 
     .menu-section{

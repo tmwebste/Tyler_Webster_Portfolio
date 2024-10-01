@@ -3,7 +3,9 @@
 .footer{
     display: flex;
     position: absolute;
-    height: 100px;
+    margin: 0%;
+    padding: 0%;
+    height: 80px;
     left: 0;
     width: 100%;
     background-color: var(--secondary);
@@ -12,6 +14,7 @@
 
 .footer-logo-section {
     width: 30rem;
+    height: auto;
     /* padding: 1rem 0; */
     margin: auto;
     justify-content: left;
@@ -21,14 +24,16 @@
 
 
 .footer-head {
-    color: var(--background);
+    color: var(--text-light);
     font-family: var(--primary-font);
+    padding: 0%;
+    margin: 0%;
 }
 
 .footer-content {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 85%;
     height: 100%;
     margin: auto;
     align-content: center;
@@ -43,6 +48,14 @@
     justify-content: right;
     padding: 0;
 }
+
+.link-img{
+    padding: 0px;
+    height: 30px;
+    margin: 10px;
+    
+}
+
 
 .social-link{
     color: var(--text-light);
