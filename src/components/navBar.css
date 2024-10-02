@@ -28,7 +28,7 @@
 }
 
 .logo-text {
-    color: var(--text-dark);
+    color: var(--text-highlight);
     font-size: 40px;
     font-family: var(--main-font);
     font-weight: 700;
@@ -50,10 +50,8 @@
 }
 
 .menu-item {
-    
     text-align: center;
-    
-    color: var(--text-dark);
+    color: var(--text-highlight);
     font-size: 120%;
     font-family: var(--main-font);
     font-weight: 400;
@@ -62,8 +60,9 @@
 }
 
 
-.menu-item:hover {
-    color: var(--text-highlight);
+.menu-item:hover, 
+.logo-text:hover{
+    color: var(--secondary);
     text-decoration: underline;
 }
 
