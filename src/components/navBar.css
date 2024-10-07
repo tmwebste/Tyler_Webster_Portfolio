@@ -23,8 +23,16 @@
     /* padding: 1rem 0; */
     padding-left: auto;
     justify-content: left;
+    align-content: bottom;
     align-items: center;
     text-align: left;
+}
+
+.logo{
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 10px;
 }
 
 .logo-text {
@@ -87,6 +95,14 @@
         padding-top: 10px;
         text-justify: center;
         text-align: center;
+    }
+
+        
+    .logo{
+        height: 1.2rem;
+        padding: 0px;
+        margin: 0px;
+        margin-right: 10px;
     }
 
     .logo-text {
