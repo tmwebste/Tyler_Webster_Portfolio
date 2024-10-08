@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './projects.css'
 import Carousel from './carousel';
 import GradientButton from './gradientButton';
+import arrow from '../assets/arrow.svg';
 
 
 class Project extends Component {
@@ -15,9 +16,9 @@ class Project extends Component {
                 <section className='project-expanded'>
                     <div className='see-project-div'>
                         <>
-                            <button onClick={() => this.props.incrementProjectIndex(-1)} className='see-more'>Previous Project</button>
+                            <button onClick={() => this.props.incrementProjectIndex(-1)} className='see-more'><img className='left-arrow' src={arrow}></img></button>
                             {/* <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See Less</button> */}
-                            <button onClick={() => this.props.incrementProjectIndex(1)} className='see-more'>Next Project</button>
+                            <button onClick={() => this.props.incrementProjectIndex(1)} className='see-more'><img className='right-arrow' src={arrow}></img></button>
                         </>
                     </div>
 
@@ -97,9 +98,9 @@ class Project extends Component {
                     </article>
                     <div className='see-project-div'>
                         <>
-                            <button onClick={() => this.props.incrementProjectIndex(-1)} className='see-more'>Previous Project</button>
+                            <button onClick={() => this.props.incrementProjectIndex(-1)} className='see-more'><img className='left-arrow' src={arrow}></img></button>
                             {/* <button onClick={() => this.props.expandCollapseProject(this.props.project.index)} className='see-more'>See Less</button> */}
-                            <button onClick={() => this.props.incrementProjectIndex(1)} className='see-more'>Next Project</button>
+                            <button onClick={() => this.props.incrementProjectIndex(1)} className='see-more'><img className='right-arrow' src={arrow}></img></button>
                         </>
                     </div>
                 </section>

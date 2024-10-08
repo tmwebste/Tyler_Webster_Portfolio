@@ -6,8 +6,8 @@
 
 .custom-nav {
     /* z-index: 4; */
-    width: 100%;
-    margin: 0px; 
+    width: 80%;
+    margin: 0px ; 
     /* padding: 0px 10% 0px 10%; */
     /* height: 60px; */
     /* background-color: #74546A; */
@@ -99,14 +99,14 @@
 
         
     .logo{
-        height: 1.2rem;
+        height: 2rem;
         padding: 0px;
         margin: 0px;
         margin-right: 10px;
     }
 
     .logo-text {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .menu-section{
@@ -117,7 +117,7 @@
     .menu-item{
         text-justify: left;
         text-align: left;
-        font-size: .8rem; /* Adjust font size for smaller screens */
+        font-size: 1.1rem; /* Adjust font size for smaller screens */
     }
 
 }

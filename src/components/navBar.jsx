@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './navBar.css';
-import myResume from '../assets/Tyler_Webster_Resume.pdf'
-import logo from '../assets/logo.svg'
+import myResume from '../assets/Tyler_Webster_Resume.pdf';
+import logo from '../assets/logo.svg';
 
 class NavBar extends Component {
     constructor() {

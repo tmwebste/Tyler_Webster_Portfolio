@@ -2,7 +2,7 @@
 
 .footer{
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     margin: 0%;
     padding: 0%;
     height: 80px;
@@ -13,6 +13,7 @@
 
 
 .footer-logo-section {
+    display: flex;
     width: 30rem;
     height: auto;
     /* padding: 1rem 0; */
@@ -33,7 +34,7 @@
 .footer-content {
     display: flex;
     flex-direction: row;
-    width: 85%;
+    width: 80%;
     height: 100%;
     margin: auto;
     align-content: center;
@@ -60,4 +61,35 @@
 .social-link{
     color: var(--text-light);
     padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer{
+        height: 160px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo-section {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-justify: center;
+        margin: auto 0px 0px 0px;
+    }
+
+    .footer-head {
+        text-align: center;
+        text-justify:center; 
+    }
+
+    .contacts{
+        justify-content: center;
+        margin: 10px auto auto auto;
+    }
+
 }

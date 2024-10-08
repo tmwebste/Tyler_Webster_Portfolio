@@ -4,39 +4,51 @@
 #bio{
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    gap: 20px;
-    /* padding: 20px; */
-    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: var(--text-dark);
+    /* margin: 10px 10px 10px 10px; */
+    /* padding: 10px; */
+    /* padding: 10px; */
+    /* padding-bottom: 0px; */
+    width: 100%;
+    height: 500px;
+    gap: auto;
+
+
+    display: flex;
+    /* height: 500px; */
+    /* flex-direction: row; */
+    /* width: auto; */
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
+    
+    padding: 20px 10% 20px 10%;
+    /* justify-content: space-between; */
     text-align: center;
+    background-color: var(--button);
 }
 
 .bio-left {
-    position: relative;
-    /* background-color: gainsboro; */
-    border-radius: 25px;
     display: flex;
+    width: 40%;
+    align-content: center;
     justify-content: center;
-    align-content: left;
-    /* z-index: 4; */
-    width: 30%;
-    padding: 0;
-    margin: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 .bio-right {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 50%;
     padding: 0;
     margin: 0;
     text-align: left;
     text-justify: left;
-    padding-top: 3%;
+    /* padding-top: 3%; */
     z-index: 3;
     /* background-color: #1F271B; */
     
@@ -49,17 +61,22 @@
 #tagline {
     color: var(--text-dark);
     font-family: var(--main-font);
-    font-weight: 300;
-    font-size: 2.0rem;
+    font-weight: 600;
+    font-size: 3.0rem;
+    /* word-spacing: unset; */
+    /* letter-spacing: 14.29vw; */
     letter-spacing: 3.60;
 }
 
 #headshot {
     position: relative;
-    z-index: 4;
-    width: 200px;
-    opacity: 100%;
-    padding: 0;
+    /* z-index: 4; */
+    height: 400px;
+    padding:auto;
+    /* margin: auto; */
+    /* max-width: 80%; */
+    /* opacity: 100%; */
+    /* padding: 0; */
     margin: 0;
     filter: blur(0.1px);
     pointer-events: none;
@@ -137,32 +154,44 @@
 
 @media screen and (max-width: 1000px) {
     #bio {
-        width: 100dw;
+        /* width: 100dw; */
         flex-direction: column; /* Adjust font size for smaller screens */
         justify-content: center;
         align-content: center;
-        padding: 0;
-        /* margin:auto; */
+        padding: 20px auto auto auto;
+        margin: 0;
+        /* margin: 20px auto auto auto; */
     }
+
+
 
     .bio-right {
         /* padding: 10px; */
         display: flex;
+        height: 50%;
+        width: auto;
         padding: 0px 20px 0px 20px;
         margin: 0px;
         text-align: center;
         text-justify: center;;
         justify-content: center;
         align-content: center;
-        width: auto;
+        
     }
 
     .bio-left{
         justify-content: center;
         align-content: center;
         width: auto;
+        height: 50%;
         padding: 0px;
         margin: 0px;
+
+    }
+
+
+    #headshot{
+        height: 100%;
 
     }
 

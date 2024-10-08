@@ -3,6 +3,7 @@ import './footer.css';
 import emailLogo from '../assets/email.svg';
 import linkedInLogo from '../assets/linkedin.svg';
 import githubLogo from '../assets/github.svg';
+import logo from '../assets/logo.svg';
 
 class Footer extends Component {
     constructor() {
@@ -14,6 +15,7 @@ class Footer extends Component {
             <section className="footer">
                 <section className='footer-content'>
                     <div className="footer-logo-section">
+                        <img className='logo' src={logo} alt='logo'></img>
                         <h3 className="footer-head" >Tyler Webster © {(new Date().getFullYear())}</h3>
                     </div>
                     <div className="contacts">
