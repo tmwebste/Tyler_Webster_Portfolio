@@ -27,9 +27,11 @@ const Carousel = () => {
 
   // Swipe handlers for mobile devices
   const handlers = useSwipeable({
+    delta: 10,
     onSwipedLeft: () => nextSlide(),
     onSwipedRight: () => prevSlide(),
     preventDefaultTouchmoveEvent: true,
+    preventScrollOnSwipe: true,
     trackMouse: true,
   });
 

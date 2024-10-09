@@ -209,7 +209,10 @@
 
     #headshot{
         height: 100%;
+    }
 
+    #headshot-back{
+        height: 25%;
     }
 
     #tagline {
