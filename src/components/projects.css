@@ -320,4 +320,8 @@
         font-size: 0.50rem;
     }
 
+    p { 
+        text-align: justify;
+    }
+
 }
