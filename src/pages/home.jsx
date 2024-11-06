@@ -4,10 +4,6 @@ import Bio from '../components/bio'
 import Projects from '../components/projects'
 import NavBar from '../components/navBar'
 import Footer from '../components/footer'
-import Skills from '../components/skills'
-import Work from '../components/work'
-import BGAccent from '../assets/Vector_BG.svg'
-// import AIMystery from '../assets/AI_Mystery.png'
 import projectJson from '../assets/projectData.json'
 import bioJson from '../assets/bio.json'
 
@@ -109,7 +105,7 @@ class Home extends Component {
 
         window.scrollTo({
             top: 0,
-            left: 0,
+            // left: 0,
             behavior: "smooth"
         });
     }

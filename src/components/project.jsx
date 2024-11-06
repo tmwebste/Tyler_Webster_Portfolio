@@ -43,12 +43,13 @@ class Project extends Component {
 
                     <article className='project-details'>
                         {/* <p>{this.props.project.details.brief}</p> */}
-                        <h2 className='subsection-header'>{this.props.project.details.problem.title}</h2>
-                        <p>{this.props.project.details.problem.text}</p>
+                        {this.props.project.details.problem.title && <h2 className='subsection-header'>{this.props.project.details.problem.title}</h2>}
+                        {this.props.project.details.problem.text && <p>{this.props.project.details.problem.text}</p> }
 
-                        <h2 className='subsection-header'>{this.props.project.details.process.title}</h2>
-                        <p>{this.props.project.details.process.text}</p>
-                        <img className='project-icon' src={this.props.project.details.process.image} alt={this.props.project.details.process.imageAlt}></img>
+                        {this.props.project.details.process.title && <h2 className='subsection-header'>{this.props.project.details.process.title}</h2> }
+                        {this.props.project.details.process.text && <p>{this.props.project.details.process.text}</p> }
+
+                        {this.props.project.details.process.image && <img className='project-icon' src={this.props.project.details.process.image} alt={this.props.project.details.process.imageAlt}></img> }
                         {this.props.project.details.process.details.map((process, index) => (
                             <article className="project-expanded-bottom">
 
@@ -72,10 +73,10 @@ class Project extends Component {
                             </div>
                         )}
                         
-                        <h2 className='subsection-header'>{this.props.project.details.solution.title}</h2>
-                        <p>{this.props.project.details.solution.text}</p>
+                        {this.props.project.details.solution.title && <h2 className='subsection-header'>{this.props.project.details.solution.title}</h2> }
+                        {this.props.project.details.solution.text && <p>{this.props.project.details.solution.text}</p> }
 
-                        <h2 className='subsection-header'>{this.props.project.details.contributions.title}</h2>
+                        {this.props.project.details.contributions.title && <h2 className='subsection-header'>{this.props.project.details.contributions.title}</h2> }
                         {this.props.project.details.contributions.details.map((contribution, index) => (
                             <article className="project-expanded-bottom">
                                 <div className='project-contribution-left'>
@@ -89,11 +90,11 @@ class Project extends Component {
 
                             </article>
                         ))}
-                        <h2 className='subsection-header'>{this.props.project.details.reflection.title}</h2>
-                        <p>{this.props.project.details.reflection.text}</p>
-                        <div className='child-links'>
+                        {/* <h2 className='subsection-header'>{this.props.project.details.reflection.title}</h2>
+                        <p>{this.props.project.details.reflection.text}</p> */}
+                        {this.props.children && <div className='child-links'>
                             {this.props.children}
-                        </div>
+                        </div>}
                         
                     </article>
                     <div className='see-project-div'>
