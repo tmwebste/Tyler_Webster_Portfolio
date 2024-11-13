@@ -66,11 +66,23 @@
     transform : rotate(45deg);
 }
 
+#tagline-big {
+    color: var(--text-dark);
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 4.0rem;
+    text-align: left;
+    /* word-spacing: unset; */
+    /* letter-spacing: 14.29vw; */
+    letter-spacing: 3.60;
+}
+
 #tagline {
     color: var(--text-dark);
     font-family: var(--main-font);
     font-weight: 600;
     font-size: 3.0rem;
+    text-align: left;
     /* word-spacing: unset; */
     /* letter-spacing: 14.29vw; */
     letter-spacing: 3.60;
@@ -177,6 +189,7 @@
         align-content: center;
         padding: 20px auto auto auto;
         margin: 0;
+        height: 500px;
         /* margin: 20px auto auto auto; */
     }
 
@@ -217,6 +230,17 @@
 
     #tagline {
         font-size: 1.5rem;
+
+    }
+
+    #tagline-big {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    #tagline {
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     .bio-expanded-bottom {

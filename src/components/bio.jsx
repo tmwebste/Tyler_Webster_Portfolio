@@ -52,7 +52,8 @@ class Bio extends Component {
                 <div className='bio-right'>
                     {/* <h2 className='bio'>About Me</h2> */}
                    
-                    <h1 id='tagline'>Innovative Engineering: Transforming Concepts into Technical Realities with Precision and Imagination.</h1>
+                    <h1 id='tagline-big'>👋🏼 Hi, Im Tyler!</h1>
+                    <h1 id='tagline'>I Transform Concepts into Functional Prototypes and Refined Products</h1>
                
                     {/* <div className='see-more-div'>
                         {!this.props.expanded && 
