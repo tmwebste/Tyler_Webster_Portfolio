@@ -6,7 +6,7 @@ import NavBar from '../components/navBar'
 import Footer from '../components/footer'
 import projectJson from '../assets/projectData.json'
 import bioJson from '../assets/bio.json'
-
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 
 class Home extends Component {
     constructor() {
@@ -190,6 +190,5 @@ class Home extends Component {
         )
     }
 }
-
 
 export default Home
