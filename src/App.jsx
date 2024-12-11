@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 
-import NavBar from '@/components/navbar';
-import AnimatedRoutes from '@/components/animatedRoutes'
+import NavBar from './components/navBar';
+import AnimatedRoutes from './components/animatedRoutes.jsx'
 
 const App = () => {
 
