@@ -1,161 +1,75 @@
 @import "index.css";
 
 #root {
-  /* display: flex; */
-  width: 100dvw;
-  margin: 0px;
-  padding: 0;
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0rem;
   text-align: center;
-  justify-content: center;
-  background-color: var(--background);
-  overflow-x: hidden;
+  text-justify: left;
+  /* overflow: hidden; */
 }
 
-body {
-  /* background-color: #74546A; */
-
+body, html, #root{
   background-color: var(--background);
   font-family: var(--main-font);
   color: var(--text-dark);
-  width: 100dvw;
-  overflow-x: hidden;
+  height: auto;
+  margin: 0;
 }
 
 .main {
+  position: relative;
+  /* left: 0; */
+  width: 100vw;
+  height: 100dvh;
+  /* overflow: hidden; */
+  /* top: 0; */
+  /* align-content: center;
+  justify-content: center; */
+}
+
+.body-button {
+  background-color: var(--text-highlight);
+  margin: 50px 0px 0px 0px;
+  color: var(--background);
+  border-radius: 0%;
+  transition: background-color .5s ease;
+  box-sizing: border-box;
+}
+
+.body-button:hover {
+  background-color: var(--secondary);
+  color: var(--background);
+  border-radius: 0%;
+  transition: background-color, border-color .5s ease;
+  border-color: var(--secondary);
+  box-sizing: border-box;
+}
+
+/* .fade-enter {
+  opacity: 1;
+  transform: translateX(100%);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s;
+} */
+
+motion.div {
   width: 100%;
-  margin-top: 30px;
-  /* margin-left: 100px;
-  margin-right: 100px; */
-  padding: 0px;
-}
-
-.section-divider {
-  position: relative;
-  background-color: red;
-  display: flex;
-  height: 0px;
-  margin-bottom: 25px;
-  z-index: -7;
-}
-
-#skills-start{
-  background-color: red;
-}
-
-#projects-start{
-  background-color: red;
-}
-
-.vertical-container {
-  display: flex;
-  /* position: sticky;
-  top: 55px; */
-  justify-content: flex-start; /* Aligns columns closer */
-  margin-right: 10px;
-  padding: 0;
-  margin: 0;
-}
-
-.vertical-container-sticky {
-  display: flex;
-  position: sticky;
-  top: 60px;
-  justify-content: flex-start; /* Aligns columns closer */
-  margin-right: 10px;
-  padding: 0;
-  margin: 0;
-}
-
-.vertical-text {
-  position: fixed;
-  font-size: large;
-  z-index: 4;
-  color: var(--text-light);
-  right: -20px;
-  bottom: 20px;
-  writing-mode: vertical-rl; /* vertical writing mode from right to left */
-  text-orientation: mixed; /* allows the text to flow in vertical direction */
-  white-space: nowrap; /* prevents text from wrapping horizontally */
-  /* additional styles as needed */
-}
-
-
-
-.vertical-text-normal {
-  writing-mode: vertical-rl; /* Vertical writing mode from right to left */
-  text-orientation: upright; /* Keeps the text upright */
-  white-space: nowrap; /* Prevents text from wrapping horizontally */
-  font-size: 24px; /* Adjust font size as needed */
-  line-height: 1.2; /* Adjust line height for spacing between letters */
-  margin: 0px; /* Adjust the margin between the columns */
-  padding: 0px;
-  color: #1F271B;
-  text-align: left;
-}
-
-/* Style each letter */
-.vertical-text-normal p {
-  display: inline-block;
-  font-size: 2.5rem;
-  font-family: 'Zen Tokyo Zoo';
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-  
-}
-
-.left-column {
+  height: 100%;
   position: absolute;
-  left: 0%;
-  top: 100px;
-  z-index: 2;
-}
-
-.right-column {
-  position: absolute;
-  left: 0%;
-  top: 400px;
-}
-
-.vertical-text-normal p span {
-  display: inline-block;
-  transform-origin: 50% 50%;
-  transform: rotate(-90deg); /* Rotate each letter 90 degrees counterclockwise */
-}
-
-.section-label {
-  position: absolute;
-  left: -80px;
-  top: 70px;
-  z-index: 2;
-  color: var(--text-light);
-}
-
-.page-section {
-  display: inline-block;
-  margin-top: 0px;
-  flex-direction: column;
-  width: 80%;
-  position: relative;
-  z-index: 2;
-  align-content: center;
-  justify-content: center;
-
-}
-
-@media screen and (max-width: 1000px) {
-  .main { 
-    width: auto;
-    margin: auto;
-    overflow-x: hidden;
-    
-  }
-
-  .section-divider{
-    margin-bottom: 20px;
-  }
-
-  #root{
-    width: auto;
-  }
+  top: 0;
+  left: 0;
 }

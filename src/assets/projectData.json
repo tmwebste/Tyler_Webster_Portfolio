@@ -1,18 +1,37 @@
 {
     "projects": [
-
         {
-            "name": "MHCI Capstone Project - MARi AI",
+            "name": "MARi AI",
             "index": 0,
-            "tagLine": "Enhancing Employee and Manager Goal-Setting through MARi's Platform",
-            "image": "../assets/mari/mari_hero.svg",
+            "path": "/projects/mari",
+            "tagLine": "Enhancing employee training and goal-setting experience through MARi's platform",
+            "image": "/mari/mari_hero.svg",
             "expanded": false,
+            "roleDetails": {
+                "roles": [
+                    "designer",
+                    "developer",
+                    "researcher"
+                ],
+                "teamsize": 5,
+                "duration": "8 Weeks",
+                "tools": [
+                    "Contextual inquiry",
+                    "Figma",
+                    "Information architecture",
+                    "Journey mapping",
+                    "Sketching",
+                    "Service design",
+                    "Task analysis",
+                    "Usability testing",
+                    "User testing"
+                ]
+            },
             "details": {
                 "brief": {
                     "title": "Project Brief",
                     "text": "CMU MHCI Capstone Project, focused on understanding goal-setting and up-skilling experiences for employees and managers using MARi's AI fueled platform. We explored how MARi’s AI capabilities can support managers in helping their employees achieve career goals."
                 },
-                
                 "problem": {
                     "title": "The Problem",
                     "text": "Current proxy-based learning methods, which rely heavily on predefined metrics and generalizations, often fail to capture a comprehensive understanding of an individual's true skills and capabilities. These methods typically assess employees based on surface-level achievements and standardized assessments rather than personalized growth metrics. As a result, managers struggle to provide effective support that nurtures an employee's full potential, leading to missed opportunities for personal and professional development. This not only limits the growth of an individual but also reduces overall employee effectiveness and fulfillment. Employees may feel underutilized and disengaged, as their true capabilities are neither recognized nor developed, ultimately impacting their productivity and job satisfaction."
@@ -23,35 +42,34 @@
                 },
                 "process": {
                     "title": "Key Design Considerations",
-                    "image":"../assets/mari/mari_process_hero.svg",
-                    "imageAlt":"5 design iterations, 40+ interviews, 30 user tesing sessions",
+                    "image": "/mari/mari_process_hero.svg",
+                    "imageAlt": "5 design iterations, 40+ interviews, 30 user tesing sessions",
                     "text": "",
                     "details": [
                         {
                             "title": "The Enterprise Ecosystem",
                             "text": "The enterprise ecosystem is built on interconnected relationships between individuals and organizational roles. At the core, employees collaborate with colleagues and are guided by direct supervisors. Moving outward, HR managers ensure that human resources practices align with organizational goals, while various roles such as training managers, recruiting managers, or direct supervisors are responsible for creating and assigning training. These stakeholders influence each other, with decisions at the managerial level shaping employee development and, in turn, the overall success of the organization.",
-                            "image": "../assets/mari/enterprise_ecosystem.svg",
+                            "image": "/mari/enterprise_ecosystem.svg",
                             "imageAlt": "Enterprise ecosystem diagram"
                         },
                         {
                             "title": "Spectrum of Workplace Readiness",
                             "text": "The Spectrum of Workplace Readiness illustrates varying levels of employee motivation. On one end are highly motivated individuals focused on achieving career goals, while the other end represents those more focused on fulfilling 9-5 roles with external aspirations. Employees move fluidly along the spectrum as their motivations evolve over time and at any given time most employees fall in the middle, navigating their career paths and goals.",
-                            "image": "../assets/mari/spectrum.svg",
+                            "image": "/mari/spectrum.svg",
                             "imageAlt": "A visual representation of the distribution of workplace readiness, highlighting varying levels of employee motivation."
                         },
                         {
                             "title": "Defining Attributes",
                             "text": "MARi redefines learning by focusing on attributes which represent the fundamental skills, knowledge, or abilities an individual possesses or develops over time. Instead of relying on proxy-based learning, MARi maps learning content directly to these attributes. Attributes are hierarchical in nature, ranging from broad categories like 'customer service' to more specific sub-skills. This structure allows for precise tracking and development of employee competencies, ensuring that training aligns with both broad organizational needs and individual growth areas.",
-                            "image": "../assets/mari/attribute.svg",
+                            "image": "/mari/attribute.svg",
                             "imageAlt": "Hierarchical attribute structure and mapping"
                         },
                         {
                             "title": "Explainable AI",
                             "text": "To build trust with AI, MARi focuses on explainability. Users need to understand why certain recommendations are made to feel confident in the results. By providing contextual descriptions and visual aids, we demystify AI's decision-making process. This transparency allows learners to see how specific courses or skills align with their career goals. For example, a learner may be recommended a Zendesk course, and through explainable AI, they'll know it's because Zendesk is the most popular CRM tool in their company and aligns with their desired career transition to customer service.",
-                            "image": "../assets/mari/ai_exp.svg",
+                            "image": "/mari/ai_exp.svg",
                             "imageAlt": "Explainable AI shown in user interface"
                         }
-                        
                     ]
                 },
                 "contributions": {
@@ -60,37 +78,37 @@
                         {
                             "title": "Employee - Collaborative Kanban Style Learning Tracker",
                             "contribution": "Employees and managers work together to create and manage training plans through a Kanban-style interface. This familiar and intuitive system allows for the agile development of training paths, with clear visibility into progress. Both employees and managers can track milestones, assign tasks, and provide resources in a transparent, collaborative environment.",
-                            "contributionImage": "../assets/mari/kanban.png"
+                            "contributionImage": "/mari/kanban.png"
                         },
                         {
                             "title": "Employee - Upskilling Recommendation System",
                             "contribution": "AI-driven personalized learning recommendations with contextual descriptions and visual aids. This tool helps employees discover new training content and understand its relevance to their career growth.",
-                            "contributionImage": "../assets/mari/learn_rec.png"
+                            "contributionImage": "/mari/learn_rec.png"
                         },
                         {
                             "title": "Employee - Key Moment Highlights",
                             "contribution": "Quickly highlight specific course excerpts from internal onboarding materials and private documentations in training resource search results. This accelerates the search process for organizational-specific training content, saving employees valuable time.",
-                            "contributionImage": "../assets/mari/key_moments.png"
+                            "contributionImage": "/mari/key_moments.png"
                         },
                         {
                             "title": "Employee - Professional Learning Progress Tracking",
                             "contribution": "A user profile system that visualizes learning progress, highlights key skills, and allows for customizable learning paths. It motivates employees to make informed decisions and actively engage in their professional development.",
-                            "contributionImage": "../assets/mari/emp_profile.png"
+                            "contributionImage": "/mari/emp_profile.png"
                         },
                         {
                             "title": "Manager - Training Activity Data Extraction",
                             "contribution": "Automatically tabulate task data from internal training activities, organized and ranked by priority for trainer’s review. Enabling organizations to more effectively track the training content they are distributing to their employees.",
-                            "contributionImage": "../assets/mari/activity_data.png"
+                            "contributionImage": "/mari/activity_data.png"
                         },
                         {
                             "title": "Manager - Skill Alignment to Training Activities",
                             "contribution": "Automated alignment of training activities with specific skills, allowing managers to better define the connection between training content and skill development. This tool also enables customization of skills based on organizational needs.",
-                            "contributionImage": "../assets/mari/attribute_detail.png"
+                            "contributionImage": "/mari/attribute_detail.png"
                         },
                         {
                             "title": "Manager - Skill Logic Canvas",
                             "contribution": "Define the relationships between training tasks and skill development through a drag-and-drop interface. Integrated with conversational AI, this tool offers a quantitative way to assess the skills gained through training activities.",
-                            "contributionImage": "../assets/mari/logic_flow.png"
+                            "contributionImage": "/mari/logic_flow.png"
                         }
                     ]
                 },
@@ -100,15 +118,34 @@
                 }
             }
         },
-
         {
             "name": "Ford Intelliride",
-            "index":1,
+            "index": 1,
+            "path": "/projects/intelliride",
             "tagLine": " An autonomous electric bicycle experience",
-            "image": "../assets/intelliride/final_test.jpg",
+            "image": "/intelliride/final_test.jpg",
             "expanded": false,
+            "roleDetails": {
+                "roles": [
+                    "designer",
+                    "engineer",
+                    "researcher"
+                ],
+                "teamsize": 4,
+                "duration": "8 Weeks",
+                "tools": [
+                    "Contextual inquiry",
+                    "Figma",
+                    "Information architecture",
+                    "Journey mapping",
+                    "Paper prototyping",
+                    "Solidworks",
+                    "Task analysis",
+                    "User testing"
+                ]
+            },
             "details": {
-                "brief":{
+                "brief": {
                     "title": "Project Brief",
                     "text": "Our team was tasked with developing a prototype system prototype that seamlessly integrates physical and digital experiences for a future fully autonomous electric bicycle."
                 },
@@ -123,55 +160,77 @@
                 "process": {
                     "title": "",
                     "text": "",
-                    "details":[
-
-                    ]
+                    "details": []
                 },
-                "contributions":{
-                    "title":"",
+                "contributions": {
+                    "title": "",
                     "details": [
                         {
-                            "title":"Simplified Home Screen",
-                            "contribution": "The screen was placed on the lower part of the bicycle stem to avoid obstructing the rider’s view. Critical information such as speed, battery status, and autonomous status is prioritized in the top bar for easy skimming. Based on feedback about complex e-bike controls, we simplified the home screen to reduce cognitive load. The home screen features three key tabs: Home for speed and bike stats, Map for navigation, and Music. Additionally, a shortcut for voice control is included. The display can be operated via touchscreen or a trackpad interface near the rider's thumb on the handlebars for intuitive control.", 
-                            "contributionImage": "../assets/intelliride/home_screen.png",
-                            "imageAlt":"image description"
-                        },                        
-                        {
-                            "title":"Autonomy Spectrum",
-                            "contribution": "The bike is designed to keep users in control, even when in fully autonomous mode. To achieve this, we defined autonomy across individual spectrums for acceleration, steering, and braking. This means the autonomous system can adjust its influence based on user input, allowing riders to override specific aspects of the bike’s operation at any time. For example, if a user steers away from the autonomous path, the bike will still manage acceleration and braking, adjusting accordingly.", 
-                            "contributionImage": "../assets/intelliride/auto_spectrum.gif",
-                            "imageAlt":"image description"
+                            "title": "Simplified Home Screen",
+                            "contribution": "The screen was placed on the lower part of the bicycle stem to avoid obstructing the rider’s view. Critical information such as speed, battery status, and autonomous status is prioritized in the top bar for easy skimming. Based on feedback about complex e-bike controls, we simplified the home screen to reduce cognitive load. The home screen features three key tabs: Home for speed and bike stats, Map for navigation, and Music. Additionally, a shortcut for voice control is included. The display can be operated via touchscreen or a trackpad interface near the rider's thumb on the handlebars for intuitive control.",
+                            "contributionImage": "/intelliride/home_screen.png",
+                            "imageAlt": "image description"
                         },
                         {
-                            "title":"Speed Control And Autopilot",
-                            "contribution": "The bike offers two modes: \"Smart Speed Control\" and \"Autopilot.\" In \"Smart Speed Control,\" similar to smart cruise control in cars, the bike autonomously handles acceleration and braking to ensure rider safety, while the rider controls the steering. \"Autopilot\" is a fully autonomous mode where the bike manages acceleration, braking, and steering, available only when a destination is set, reducing navigation risks and improving system predictability.", 
-                            "contributionImage": "../assets/intelliride/speed_auto.gif",
-                            "imageAlt":"image description"
+                            "title": "Autonomy Spectrum",
+                            "contribution": "The bike is designed to keep users in control, even when in fully autonomous mode. To achieve this, we defined autonomy across individual spectrums for acceleration, steering, and braking. This means the autonomous system can adjust its influence based on user input, allowing riders to override specific aspects of the bike’s operation at any time. For example, if a user steers away from the autonomous path, the bike will still manage acceleration and braking, adjusting accordingly.",
+                            "contributionImage": "/intelliride/auto_spectrum.gif",
+                            "imageAlt": "image description"
                         },
                         {
-                            "title":"Smartphone Integration",
-                            "contribution": "In the app, users can provide feedback on their routes, and paths from riders with similar preferences are aggregated to optimize recommendations. The phone can be connected via USB or Bluetooth, with notifications displayed on the bike's screen, allowing voice command responses. Calendar events and text messages with addresses are temporarily added to starred locations for easy navigation. This approach ensured personalized, real-time route recommendations and enhanced user convenience and safety.", 
-                            "contributionImage": "../assets/intelliride/iphone_app.png",
-                            "imageAlt":"image description"
+                            "title": "Speed Control And Autopilot",
+                            "contribution": "The bike offers two modes: \"Smart Speed Control\" and \"Autopilot.\" In \"Smart Speed Control,\" similar to smart cruise control in cars, the bike autonomously handles acceleration and braking to ensure rider safety, while the rider controls the steering. \"Autopilot\" is a fully autonomous mode where the bike manages acceleration, braking, and steering, available only when a destination is set, reducing navigation risks and improving system predictability.",
+                            "contributionImage": "/intelliride/speed_auto.gif",
+                            "imageAlt": "image description"
+                        },
+                        {
+                            "title": "Smartphone Integration",
+                            "contribution": "In the app, users can provide feedback on their routes, and paths from riders with similar preferences are aggregated to optimize recommendations. The phone can be connected via USB or Bluetooth, with notifications displayed on the bike's screen, allowing voice command responses. Calendar events and text messages with addresses are temporarily added to starred locations for easy navigation. This approach ensured personalized, real-time route recommendations and enhanced user convenience and safety.",
+                            "contributionImage": "/intelliride/iphone_app.png",
+                            "imageAlt": "image description"
                         }
                     ]
-                }, 
-                "reflection":{
+                },
+                "reflection": {
                     "title": "",
-                    "text":""
+                    "text": ""
                 }
             }
         },
         {
-            "name": "Precision Agriculture for Vineyard Frost Protection",
-            "index":2,
-            "tagLine": "Harnessing technology to provide small-scale vineyards with an affordable, efficient solution for early frost detection, enhancing crop protection and economic sustainability.",
-            "image": "../assets/Vineyard/vineyardThumbnail.jpg",
+            "name": "VineWatch",
+            "index": 2,
+            "path": "/projects/vinewatch",
+            "tagLine": "Wireless sensor system for early frost detection at vulnerable small scale vineyards",
+            "image": "/Vineyard/vineyardThumbnail.jpg",
             "expanded": false,
+            "roleDetails": {
+                "roles": [
+                    "designer",
+                    "developer",
+                    "engineer",
+                    "researcher"
+                ],
+                "teamsize": 5,
+                "duration": "2 Years",
+                "tools": [
+                    "3D printing",
+                    "C++",
+                    "Circuit design",
+                    "Design validation testing",
+                    "Machining",
+                    "Python",
+                    "Firebase",
+                    "ReactJS",
+                    "Reliability testing",
+                    "Solidworks",
+                    "User testing"
+                ]
+            },
             "details": {
                 "brief": {
                     "title": "Project Brief",
-                    "text" : "Precision agriculture is a growing trend where monitoring and automation is utilized to enhance yields and minimize financial risks. My team was tasked with creating a solution tailored for a local Virginia vineyard facing challenges with frost. Our client had previously experienced a substantial loss when more than 50% of a year’s harvest was damaged by frost. Frost countermeasures are commonly used but are costly and require advanced notice to determine when to deploy them. The solution is a reliable and cost-effective sensor network to detect early frost conditions for frost prevention in small-scale vineyards to help better inform when and where to deploy frost countermeasures."
+                    "text": "Precision agriculture is a growing trend where monitoring and automation is utilized to enhance yields and minimize financial risks. My team was tasked with creating a solution tailored for a local Virginia vineyard facing challenges with frost. Our client had previously experienced a substantial loss when more than 50% of a year’s harvest was damaged by frost. Frost countermeasures are commonly used but are costly and require advanced notice to determine when to deploy them. The solution is a reliable and cost-effective sensor network to detect early frost conditions for frost prevention in small-scale vineyards to help better inform when and where to deploy frost countermeasures."
                 },
                 "problem": {
                     "title": "The Problem",
@@ -184,47 +243,62 @@
                 "process": {
                     "title": "",
                     "text": "",
-                    "details":[
-
-                    ]
+                    "details": []
                 },
-                "contributions":{
+                "contributions": {
                     "title": "My Contibutions",
-                    "details":[
-                        {   
-                            "title":"System Hardware",
-                            "contribution": "Designing and assembling the hardware for the sensor system. This included selecting appropriate sensors, creating a durable and weather-resistant design, and ensuring the system's operational efficiency in various environmental conditions.", 
-                            "contributionImage": "../assets/Vineyard/Single_Sensor.png",
-                            "imageAlt":"image description"
+                    "details": [
+                        {
+                            "title": "System Hardware",
+                            "contribution": "Designing and assembling the hardware for the sensor system. This included selecting appropriate sensors, creating a durable and weather-resistant design, and ensuring the system's operational efficiency in various environmental conditions.",
+                            "contributionImage": "/Vineyard/Single_Sensor.png",
+                            "imageAlt": "image description"
                         },
                         {
-                            "title":"Sensor Processing",
-                            "contribution": "Software for data acquisition and management. This software was responsible for collecting data from the sensors, processing it, and presenting it in a user-friendly format for vineyard managers to make informed decisions.", 
-                            "contributionImage": "../assets/Vineyard/Vineyard_Install.png",
-                            "imageAlt":"image description"
+                            "title": "Sensor Processing",
+                            "contribution": "Software for data acquisition and management. This software was responsible for collecting data from the sensors, processing it, and presenting it in a user-friendly format for vineyard managers to make informed decisions.",
+                            "contributionImage": "/Vineyard/Vineyard_Install.png",
+                            "imageAlt": "image description"
                         },
                         {
-                            "title":"Data Pipeline",
-                            "contribution": "Integrating the sensor system with a backend server. This involved establishing reliable communication between the sensors and the server, ensuring seamless data transfer.", 
-                            "contributionImage": "../assets/Vineyard/UI.png",
-                            "imageAlt":"image description"
+                            "title": "Data Pipeline",
+                            "contribution": "Integrating the sensor system with a backend server. This involved establishing reliable communication between the sensors and the server, ensuring seamless data transfer.",
+                            "contributionImage": "/Vineyard/UI.png",
+                            "imageAlt": "image description"
                         }
                     ]
-                }, 
-                "reflection":{
+                },
+                "reflection": {
                     "title": "",
-                    "text":""
+                    "text": ""
                 }
             }
         },
         {
             "name": "Bumble BeeThere",
-            "index":3,
-            "tagLine": "A new location based paradigm for Bumble's app.",
-            "image": "../assets/Bumble_Thumbnail.png",
+            "index": 3,
+            "path": "/projects/bumble-beethere",
+            "tagLine": "Promoting accountability on Bumble through a new location based paradigm",
+            "image": "/bumble/Bumble_Thumbnail.png",
             "expanded": false,
+            "roleDetails": {
+                "roles": [
+                    "designer",
+                    "researcher"
+                ],
+                "teamsize": 1,
+                "duration": "6 Weeks",
+                "tools": [
+                    "Figma",
+                    "Google Material UI",
+                    "Journey mapping",
+                    "Service design",
+                    "Task analysis",
+                    "User testing"
+                ]
+            },
             "details": {
-                "brief":{
+                "brief": {
                     "title": "Project Brief",
                     "text": "This project aims to grow Bumble's paying subscriber base with improved location services across mobile, desktop, and watch devices, focusing on the under-35 demographic. Leveraging precise location technology, it aims to enhance the experience for premium subscribers, particularly on the native iPhone app due to its high user concentration."
                 },
@@ -239,47 +313,45 @@
                 "process": {
                     "title": "",
                     "text": "",
-                    "details":[
-                    ]
+                    "details": []
                 },
-                "contributions":{
-                    "title":"Final Solution",
+                "contributions": {
+                    "title": "Final Solution",
                     "details": [
                         {
-                            "title":"Date Scheduling",
-                            "contribution": "Bumble BeeThere streamlines the dating experience by smartly integrating a scheduling feature within the app. When users agree to a date, a button appears, inviting them to add the event to their Bumble Calendar. This efficient tool takes the hassle out of date management, ensuring that agreed-upon meetups are effortlessly tracked and organized, within the familiar environment of the Bumble app.", 
-                            "contributionImage": "../assets/scheduling.png",
-                            "imageAlt":"image description"
+                            "title": "Date Scheduling",
+                            "contribution": "Bumble BeeThere streamlines the dating experience by smartly integrating a scheduling feature within the app. When users agree to a date, a button appears, inviting them to add the event to their Bumble Calendar. This efficient tool takes the hassle out of date management, ensuring that agreed-upon meetups are effortlessly tracked and organized, within the familiar environment of the Bumble app.",
+                            "contributionImage": "/bumble/scheduling.png",
+                            "imageAlt": "image description"
                         },
                         {
-                            "title":"Reliability Rating",
-                            "contribution": "Bumble BeeThere introduces a Reliability Rating feature, adding an extra layer of honest transparency to the dating experience. This 1-5 scale on user profiles indicates their likelihood of showing up to a date, with the score adjusting based on their punctuality and attendance history. Users who consistently honor their commitments see their scores rise, enhancing their appeal for future dates. This system not only rewards reliability but also empowers users to make informed decisions, fostering a more trustworthy and dependable dating community.", 
-                            "contributionImage": "../assets/reliability.png",
-                            "imageAlt":"image description"
+                            "title": "Reliability Rating",
+                            "contribution": "Bumble BeeThere introduces a Reliability Rating feature, adding an extra layer of honest transparency to the dating experience. This 1-5 scale on user profiles indicates their likelihood of showing up to a date, with the score adjusting based on their punctuality and attendance history. Users who consistently honor their commitments see their scores rise, enhancing their appeal for future dates. This system not only rewards reliability but also empowers users to make informed decisions, fostering a more trustworthy and dependable dating community.",
+                            "contributionImage": "/bumble/reliability.png",
+                            "imageAlt": "image description"
                         },
                         {
-                            "title":"Watch Integration",
-                            "contribution": "Bumble BeeThere seamlessly integrates with the Apple Watch, using location technology to detect when users are en route to their date. This smart feature prompts the wearer to confirm their departure, celebrating timely confirmations. Upon confirmation, it promptly informs the other party of the user's status, fostering a culture of punctuality and clear communication. This integration not only enhances user convenience but also adds a layer of reassurance, keeping both parties informed and connected every step of the way.", 
-                            "contributionImage": "../assets/watch.png",
-                            "imageAlt":"image description"
+                            "title": "Watch Integration",
+                            "contribution": "Bumble BeeThere seamlessly integrates with the Apple Watch, using location technology to detect when users are en route to their date. This smart feature prompts the wearer to confirm their departure, celebrating timely confirmations. Upon confirmation, it promptly informs the other party of the user's status, fostering a culture of punctuality and clear communication. This integration not only enhances user convenience but also adds a layer of reassurance, keeping both parties informed and connected every step of the way.",
+                            "contributionImage": "/bumble/watch.png",
+                            "imageAlt": "image description"
                         }
                     ]
                 },
-                "reflection":{
+                "reflection": {
                     "title": "",
-                    "text":""
+                    "text": ""
                 }
             }
         },
-        
         {
             "name": "OpenAI Powered Murder Mystery Game",
-            "index":4,
+            "index": 4,
             "tagLine": "Dynamically generating game scenarios and character responses via Open AI.",
             "image": "../assets/AI_Mystery.png",
             "expanded": false,
             "details": {
-                "brief":{
+                "brief": {
                     "title": "Project Brief",
                     "text": "This project was a personal experiment with OpenAI where I created a text based murder mystery game."
                 },
@@ -294,85 +366,136 @@
                 "process": {
                     "title": "",
                     "text": "",
-                    "details":[
-
-                    ]
+                    "details": []
                 },
-                "contributions":{
-                    "title":"",
-                    "details": [
-
-                    ]
-                }, 
-                "reflection":{
+                "contributions": {
                     "title": "",
-                    "text":""
+                    "details": []
+                },
+                "reflection": {
+                    "title": "",
+                    "text": ""
                 }
             }
         },
-
-
-
-        
-
         {
-            "name": "Haptic Glove For Physical Therapy",
-            "index":5,
-            "tagLine": "Improving activity learning and adhesion through continuous haptic feedback and feed-forward.",
-            "image": "../assets/placeholder.webp",
+            "name": "Go-Go Grocery (Work in Progress)",
+            "index": 5,
+            "path": "/projects/gogo-grocery",
+            "tagLine": "Improving health, safety, and discoverability for shoppers with dietary restrictions",
+            "image": "/gogoGrocery/cart_thumb.png",
             "expanded": false,
+            "roleDetails": {
+                "roles": [
+                    "designer",
+                    "researcher"
+                ],
+                "teamsize": 5,
+                "duration": "8 Weeks",
+                "tools": [
+                    "Contextual inquiry",
+                    "Figma",
+                    "Journey mapping",
+                    "Paper prototyping",
+                    "Solidworks",
+                    "Task analysis",
+                    "User testing"
+                ]
+            },
             "details": {
-                "brief":{
-                    "title": "",
-                    "text": ""
+                "brief": {
+                    "title": "Project Brief",
+                    "text": "This project addressed accessibility challenges in public spaces by integrating emerging technologies like IoT and smart materials into grocery stores. The focus was on inclusivity for shoppers with dietary restrictions and allergies."
                 },
                 "problem": {
-                    "title": "",
-                    "text": ""
+                    "title": "The Problem",
+                    "text": "Shopping with dietary restrictions is often a slow, overwhelming, and limiting experience for many individuals. Approximately 1 in 10 adults have food allergies, and 51% of those experience severe reactions, highlighting the critical need for clear and accessible allergen information. However, the FDA does not require standardized allergen labeling, leaving many consumers to spend three to five minutes reading labels for a single product or avoiding entire food categories to ensure safety. This lack of standardization makes grocery shopping a stressful and time-consuming task for individuals with dietary restrictions. Additionally, while online shopping offers some conveniences, only 7.2% of grocery spending occurs online, as most shoppers prefer personal contact with products. Furthermore, the need to save money is a priority for 60% of shoppers, adding another layer of complexity to their shopping experience. Together, these factors create significant barriers for consumers with allergies and dietary restrictions, making grocery shopping an unnecessarily difficult and frustrating process."
                 },
                 "solution": {
-                    "title": "",
-                    "text": ""
+                    "title": "The Solution",
+                    "text": "Go-Go Grocery is designed to make shopping safer and more accessible for individuals with dietary restrictions. It integrates a smart wristband and a clip-on cart handle, creating a seamless system that alerts users to incompatible products and provides real-time updates on their shopping preferences. The system leverages IoT to connect the wristband, cart, and store database, enabling automatic ingredient detection and personalized guidance. By addressing safety, health, and discoverability, Go-Go Grocery simplifies grocery shopping, making it a more inclusive and stress-free experience."
                 },
                 "process": {
-                    "title": "",
-                    "text": "",
-                    "details":[
-
-                    ]
-                },
-                "contributions":{
-                    "title":"",
+                    "title": "Process",
+                    "text": "The process included extensive research, ideation, and iterative design. The team identified core user needs and leveraged IoT and smart materials to create a practical and inclusive solution.",
                     "details": [
                         {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title": "Research",
+                            "text": "The team conducted primary and secondary research, including observing shopping behavior and analyzing industry reports. Insights revealed key user pain points like time-consuming label reading and safety concerns.",
+                            "image": "/gogoGrocery/research.png",
+                            "imageAlt": "Research personas"
                         },
                         {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title": "Ideation",
+                            "text": "The team brainstormed and refined ideas, focusing on solutions that enhanced safety, health, and discoverability. They explored the integration of IoT and smart materials into everyday grocery store experiences.",
+                            "image": "/gogoGrocery/ideation.png",
+                            "imageAlt": "Ideation sketches and brainstorming"
                         },
                         {
-                            "contribution": "", 
-                            "contributionImage": "../assets/placeholder.webp"
+                            "title": "Prototyping",
+                            "text": "Initial concepts included a smart wristband and cart handle. Iterative testing and feedback helped refine these components for usability and durability in real-world conditions.",
+                            "image": "/gogoGrocery/prototyping.png",
+                            "imageAlt": "Prototyping the solutions"
                         }
                     ]
-                }, 
-                "reflection":{
-                    "title": "",
-                    "text":""
+                },
+                "contributions": {
+                    "title": "Final Solution",
+                    "details": [
+                        {
+                            "title": "Customer Shopping Process",
+                            "contribution": "The shopping process starts with scanning the wristband to load dietary preferences. As the customer shops, the system provides warnings for unsafe items, displays product prices, and tracks a running total, creating a seamless and safe experience.",
+                            "contributionImage": "/gogoGrocery/shopping_process.png",
+                            "imageAlt": "Customer shopping process flowchart"
+                        },
+                        {
+                            "title": "Smart Wristband",
+                            "contribution": "The smart wristband stores user-specific dietary restrictions and allergies, alerting shoppers through vibrations when they approach products that don’t meet their requirements. Its slap-bracelet design ensures ease of use and accessibility for all shoppers.",
+                            "contributionImage": "/gogoGrocery/smart_wristband.png",
+                            "imageAlt": "Smart wristband design and functionality"
+                        },
+                        {
+                            "title": "Cart Handle Interface",
+                            "contribution": "The clip-on cart handle provides a central interface for users, displaying dietary settings, real-time product notifications, and a running total of items. This design ensures critical information is visible and easy to access during shopping.",
+                            "contributionImage": "/gogoGrocery/cart-handle-interface.png",
+                            "imageAlt": "Clip-on shopping cart handle with interactive interface"
+                        },
+                        {
+                            "title": "Account Integration",
+                            "contribution": "The system integrates with user accounts, allowing shoppers to set dietary preferences that sync with the wristband and cart interface. This ensures personalized alerts and guidance tailored to each shopper’s needs.",
+                            "contributionImage": "/gogoGrocery/account_integration.png",
+                            "imageAlt": "Account setup and integration diagram"
+                        }
+                    ]
+                },
+                "reflection": {
+                    "title": "Reflection",
+                    "text": "This project demonstrated the potential of IoT and inclusive design in addressing real-world challenges. Iterative testing and teamwork were critical in delivering a solution that is both innovative and feasible."
+                }
+            },
+            "backup": {
+                "details": {
+                    "contributions": {
+                        "details": [
+                            {
+                                "title": "IoT Network",
+                                "contribution": "The IoT network connects the wristband, cart handle, and store database to automatically detect ingredient compatibility and provide real-time alerts. This integration ensures a smooth, automated shopping experience.",
+                                "contributionImage": "/gogoGrocery/iot_network.png",
+                                "imageAlt": "Diagram of IoT network integration"
+                            }
+                        ]
+                    }
                 }
             }
         },
-
         {
             "name": "Bumble BeeThere BACKUP",
-            "index":6,
+            "index": 6,
             "tagLine": "A new location based paradigm for Bumble's app.",
             "image": "../assets/Bumble_Thumbnail.png",
             "expanded": false,
             "details": {
-                "brief":{
+                "brief": {
                     "title": "Project Brief",
                     "text": "The project aims to boost Bumble's paying subscriber base through enhanced location services on mobile, desktop, and watch devices. Targeting primarily the under-35 demographic, the project seeks to increase conversions by leveraging precise location technology improve the experience for Bumble’s premium subscribers. The primary platform of focus is the native Iphone app, this is due to the high concentration of users on this platform."
                 },
@@ -387,60 +510,59 @@
                 "process": {
                     "title": "Process",
                     "text": "",
-                    "details":[
-                        {
-                            "title":"Language of Date Confirmation and Cancelation",
-                            "text":"I spent considerable time deliberating on how to phrase the feedback a user receives upon cancelling a date. My aim was to subtly incentivize users to commit to the dates they arranged. After much thought, I chose to describe cancelling as bailing. This term strikes a balance, subtly implying that cancelling is generally unfavorable without being overly dramatic. For instance, I had initially considered using termination to describe the act of cancelling, but this felt excessively harsh. To further encourage commitment, I implemented a celebratory feature in both the phone app and the watch for when a user confirms a date. This addition serves as a positive reinforcement, promoting follow-through on planned dates. These carefully considered language choices and features were all part of a strategy to foster a sense of responsibility and enthusiasm about keeping commitments made through the app.",
-                            "image": "../assets/watch_language.png",
-                            "imageAlt":"image description"
-                        },
-                        {
-                            "title":"Keeping Date Planning Within Bumble",
-                            "text":"I decided to keep date planning, tracking, and management exclusively within the Bumble app, rather than integrating it with the device's system calendar. This choice was made to centralize crucial date details within the app, thereby maintaining user engagement. By housing key information about a date—such as the who, where, when, and what—solely in the Bumble app, the platform is positioned to play a significant and valuable role in an individual's dating life.To simplify the scheduling of new dates, I implemented a feature that activates when two users express a mutual intention to go on a date. This interaction triggers a button that enables users to automatically schedule a date in the app, with all relevant information pre-filled. This feature aims to streamline the date-planning process, making it more efficient and saving users time.",
-                            "image": "../assets/date_planning.png",
-                            "imageAlt":"image description"
-                        },
-                        {
-                            "title":"Simplifying the Date Calendar",
-                            "text":"The calendar feature was designed to present all the essential information about a user's scheduled dates in a clear and concise manner. Initially, I considered adopting an interface similar to Google Calendar, but I realized that it could become too cluttered and overwhelming. Incorporating such a detailed calendar format would also increase the number of steps required for a user to access specific information about a date. To address this, I designed cards representing each date with a focus on clearly displaying the most critical details – the who, the when, and the where. This approach allows users to quickly capture all the necessary information at a glance, streamlining the process of keeping track of their scheduled dates.",
-                            "image": "../assets/simplified_calendar.png",
-                            "imageAlt":"image description"
-                        },
-                        {
-                            "title":"Moving Date Managment to the Wrist",
-                            "text":"The integration of the Apple Watch was designed to emulate the intuitive experience users have when the watch detects the start of an exercise session. In a similar vein, when the Bumble app infers that a user might be en route to a date's location, it sends a push notification to their Apple Watch. This notification prompts the user to confirm they are on their way. Initially, this functionality was confined to the phone app, but I later extended it to the watch to encourage prompt responses and reduce the steps needed to confirm attendance at a date. Upon confirmation by one user, the other party receives a notification as a reminder of their scheduled meeting. This feature ensures both parties are aware and prepared for their upcoming date, enhancing the overall experience of the app's scheduling function.",
-                            "image": "../assets/watch_process.png",
-                            "imageAlt":"image description"
-                        }
-
-                    ]
-                },
-                "contributions":{
-                    "title":"Final Solution",
                     "details": [
                         {
-                            "title":"Date Scheduling",
-                            "contribution": "Bumble BeeThere streamlines the dating experience by smartly integrating a scheduling feature within the app. When users agree to a date, a button appears, inviting them to add the event to their Bumble Calendar. This efficient tool takes the hassle out of date management, ensuring that agreed-upon meetups are effortlessly tracked and organized, within the familiar environment of the Bumble app.", 
-                            "contributionImage": "../assets/scheduling.png",
-                            "imageAlt":"image description"
+                            "title": "Language of Date Confirmation and Cancelation",
+                            "text": "I spent considerable time deliberating on how to phrase the feedback a user receives upon cancelling a date. My aim was to subtly incentivize users to commit to the dates they arranged. After much thought, I chose to describe cancelling as bailing. This term strikes a balance, subtly implying that cancelling is generally unfavorable without being overly dramatic. For instance, I had initially considered using termination to describe the act of cancelling, but this felt excessively harsh. To further encourage commitment, I implemented a celebratory feature in both the phone app and the watch for when a user confirms a date. This addition serves as a positive reinforcement, promoting follow-through on planned dates. These carefully considered language choices and features were all part of a strategy to foster a sense of responsibility and enthusiasm about keeping commitments made through the app.",
+                            "image": "../assets/watch_language.png",
+                            "imageAlt": "image description"
                         },
                         {
-                            "title":"Reliability Rating",
-                            "contribution": "Bumble BeeThere introduces a groundbreaking Reliability Rating feature, adding an extra layer of honest transparency to the dating experience. This 1-5 scale on user profiles indicates their likelihood of showing up to a date, with the score adjusting based on their punctuality and attendance history. Users who consistently honor their commitments see their scores rise, enhancing their appeal for future dates. This system not only rewards reliability but also empowers users to make informed decisions, fostering a more trustworthy and dependable dating community.", 
-                            "contributionImage": "../assets/reliability.png",
-                            "imageAlt":"image description"
+                            "title": "Keeping Date Planning Within Bumble",
+                            "text": "I decided to keep date planning, tracking, and management exclusively within the Bumble app, rather than integrating it with the device's system calendar. This choice was made to centralize crucial date details within the app, thereby maintaining user engagement. By housing key information about a date—such as the who, where, when, and what—solely in the Bumble app, the platform is positioned to play a significant and valuable role in an individual's dating life.To simplify the scheduling of new dates, I implemented a feature that activates when two users express a mutual intention to go on a date. This interaction triggers a button that enables users to automatically schedule a date in the app, with all relevant information pre-filled. This feature aims to streamline the date-planning process, making it more efficient and saving users time.",
+                            "image": "../assets/date_planning.png",
+                            "imageAlt": "image description"
                         },
                         {
-                            "title":"Watch Integration",
-                            "contribution": "Bumble BeeThere seamlessly integrates with the Apple Watch, using location technology to detect when users are en route to their date. This smart feature prompts the wearer to confirm their departure, celebrating timely confirmations. Upon confirmation, it promptly informs the other party of the user's status, fostering a culture of punctuality and clear communication. This integration not only enhances user convenience but also adds a layer of reassurance, keeping both parties informed and connected every step of the way.", 
-                            "contributionImage": "../assets/watch.png",
-                            "imageAlt":"image description"
+                            "title": "Simplifying the Date Calendar",
+                            "text": "The calendar feature was designed to present all the essential information about a user's scheduled dates in a clear and concise manner. Initially, I considered adopting an interface similar to Google Calendar, but I realized that it could become too cluttered and overwhelming. Incorporating such a detailed calendar format would also increase the number of steps required for a user to access specific information about a date. To address this, I designed cards representing each date with a focus on clearly displaying the most critical details – the who, the when, and the where. This approach allows users to quickly capture all the necessary information at a glance, streamlining the process of keeping track of their scheduled dates.",
+                            "image": "../assets/simplified_calendar.png",
+                            "imageAlt": "image description"
+                        },
+                        {
+                            "title": "Moving Date Managment to the Wrist",
+                            "text": "The integration of the Apple Watch was designed to emulate the intuitive experience users have when the watch detects the start of an exercise session. In a similar vein, when the Bumble app infers that a user might be en route to a date's location, it sends a push notification to their Apple Watch. This notification prompts the user to confirm they are on their way. Initially, this functionality was confined to the phone app, but I later extended it to the watch to encourage prompt responses and reduce the steps needed to confirm attendance at a date. Upon confirmation by one user, the other party receives a notification as a reminder of their scheduled meeting. This feature ensures both parties are aware and prepared for their upcoming date, enhancing the overall experience of the app's scheduling function.",
+                            "image": "../assets/watch_process.png",
+                            "imageAlt": "image description"
                         }
                     ]
                 },
-                "reflection":{
+                "contributions": {
+                    "title": "Final Solution",
+                    "details": [
+                        {
+                            "title": "Date Scheduling",
+                            "contribution": "Bumble BeeThere streamlines the dating experience by smartly integrating a scheduling feature within the app. When users agree to a date, a button appears, inviting them to add the event to their Bumble Calendar. This efficient tool takes the hassle out of date management, ensuring that agreed-upon meetups are effortlessly tracked and organized, within the familiar environment of the Bumble app.",
+                            "contributionImage": "../assets/scheduling.png",
+                            "imageAlt": "image description"
+                        },
+                        {
+                            "title": "Reliability Rating",
+                            "contribution": "Bumble BeeThere introduces a groundbreaking Reliability Rating feature, adding an extra layer of honest transparency to the dating experience. This 1-5 scale on user profiles indicates their likelihood of showing up to a date, with the score adjusting based on their punctuality and attendance history. Users who consistently honor their commitments see their scores rise, enhancing their appeal for future dates. This system not only rewards reliability but also empowers users to make informed decisions, fostering a more trustworthy and dependable dating community.",
+                            "contributionImage": "../assets/reliability.png",
+                            "imageAlt": "image description"
+                        },
+                        {
+                            "title": "Watch Integration",
+                            "contribution": "Bumble BeeThere seamlessly integrates with the Apple Watch, using location technology to detect when users are en route to their date. This smart feature prompts the wearer to confirm their departure, celebrating timely confirmations. Upon confirmation, it promptly informs the other party of the user's status, fostering a culture of punctuality and clear communication. This integration not only enhances user convenience but also adds a layer of reassurance, keeping both parties informed and connected every step of the way.",
+                            "contributionImage": "../assets/watch.png",
+                            "imageAlt": "image description"
+                        }
+                    ]
+                },
+                "reflection": {
                     "title": "",
-                    "text":""
+                    "text": ""
                 }
             }
         }

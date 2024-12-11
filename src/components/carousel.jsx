@@ -6,11 +6,11 @@ import './carousel.css'; // For the CSS part
 
 const Carousel = () => {
   const svgs = [
-    '../assets/mari/e-cn.svg',
-    '../assets/mari/e-ps.svg',
-    '../assets/mari/e-vl.svg',
-    '../assets/mari/tm-ra.svg',
-    '../assets/mari/tm-sm.svg',
+    '/mari/e-cn.svg',
+    '/mari/e-ps.svg',
+    '/mari/e-vl.svg',
+    '/mari/tm-ra.svg',
+    '/mari/tm-sm.svg',
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

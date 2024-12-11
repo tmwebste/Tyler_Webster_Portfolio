@@ -1,0 +1,26 @@
+/* Custom cursor style */
+body, .menu-item, .menu-item:hover, .logo-text, .logo-text:hover{
+    /* cursor: none; */
+}
+
+.custom-cursor {
+    position: absolute;
+    width: 50px; /* Cursor size */
+    height: 50px;
+    border-radius: 50%; /* Make it circular */
+    background-color: black;
+    pointer-events: none; /* Don't block clicks */
+    /* mix-blend-mode: difference; */
+    transform: translate(-50%, -50%);
+    transition: width 0.1s ease, height 0.1s ease;
+    z-index: 3;
+    mix-blend-mode: difference;
+    svg {
+       overflow: visible;
+  
+     }
+  }
+  
+  h1 {
+    color: black;
+  }
