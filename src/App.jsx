@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter , Route, Routes, useLocation, HashRouter } from 'react-router-dom';
 import './App.css';
 
 import NavBar from './components/navBar';
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className='main'>
     
-      <Router>
+      <HashRouter>
         <NavBar />
         <AnimatedRoutes/>
         {/* <Routes location={location} key={location.pathname}>
@@ -18,7 +18,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
         </Routes> */}
-      </Router>
+      </HashRouter>
     </div>
   );
 };
