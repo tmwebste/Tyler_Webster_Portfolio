@@ -38,23 +38,7 @@ const Carousel = () => {
   // Media query to detect if the screen width is mobile or not
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
-  // Calculate tilt effect based on mouse position
-  const handleMouseMove = (e, index) => {
-    const card = e.currentTarget.hover;
-    const cardRect = card.getBoundingClientRect();
-    const cardCenterX = cardRect.left + cardRect.width / 2;
-    const cardCenterY = cardRect.top + cardRect.height / 2;
-    const offsetX = e.clientX - cardCenterX;
-    const offsetY = e.clientY - cardCenterY;
-    const rotateX = (offsetY / cardRect.height) * 50; // Adjust the multiplier for tilt intensity
-    const rotateY = -(offsetX / cardRect.width) * 50;   // Adjust the multiplier for tilt intensity
-    // console.log(rotateX , rotateY);
-    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.0)`; // tilt and scale effect
-    card.style.transition = 'transform 0.3s ease-out';
-   
-  };
-
-  // Conditionally render based on whether it's mobile or desktop
+  
   return (
     <>
       {isMobile ? (

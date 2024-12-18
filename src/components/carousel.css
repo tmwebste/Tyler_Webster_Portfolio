@@ -22,7 +22,7 @@
   
 /* Active dot styling */
 .active-dot {
-    background-color: var(--button); /* Highlight active dot */
+    background-color: var(--text-highlight); /* Highlight active dot */
 }
 
 
@@ -36,7 +36,7 @@
         /* position: relative; */
        
         padding: 1px;
-        margin: 0px;
+        margin: 20px 0 20px 0 ;
         /* margin-top: 10px; */
     }
 
