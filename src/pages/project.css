@@ -241,6 +241,7 @@
     margin: 0px;
     padding: 0px;
     rotate: 180deg;
+    pointer-events: none;
 
 }
 
@@ -249,6 +250,7 @@
     height: 30px;
     margin: 0px;
     padding: 0px;
+    pointer-events: none;
 }
 
 p {
@@ -266,6 +268,7 @@ p {
     width: auto;
     transition: background-color .5s ease;
     box-sizing: border-box;
+    
 }
 
 .round-button:hover {
@@ -275,6 +278,8 @@ p {
     transition: background-color .5s ease;
     border-color: var(--secondary);
     box-sizing: border-box;
+    cursor: none;
+    
 }
 
 .progress-bar-full {

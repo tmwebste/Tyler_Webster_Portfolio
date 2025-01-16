@@ -56,7 +56,7 @@
 }
 
 .logo-text:hover {
-    cursor: pointer;
+    cursor: none;
 }
 
 .logo {
@@ -98,17 +98,17 @@
     -moz-transition: background-color .2s ease-in-out, color .2s ease-in-out;
     -o-transition: background-color .2s ease-in-out, color .2s ease-in-out;
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
-    cursor: pointer;
 }
 
 .menu-item:hover {
+    cursor: none;
     background-color: var(--text-highlight);
     color: var(--text-dark);
     -webkit-transition: background-color .2s ease-in-out, color .2s ease-in-out;
     -moz-transition: background-color .2s ease-in-out, color .2s ease-in-out;
     -o-transition: background-color .2s ease-in-out, color .2s ease-in-out;
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
-    cursor: pointer;
+    
 }
 
 .hamburger {

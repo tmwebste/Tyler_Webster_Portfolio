@@ -67,6 +67,7 @@
     /* Maintain aspect ratio and fill the space */
     transition: opacity 0.5s ease;
     z-index: 2;
+    
 
 }
 
@@ -75,13 +76,15 @@
     height: 75%;
     padding: auto;
     object-fit: scale-down;
-    cursor: pointer;
+    cursor: none;
+    pointer-events: none;
     z-index: 1;
     border-radius: 10px;
 }
 
 .project-link:hover {
     opacity: 80%;
+    cursor: none;
 }
 
 .title-text {
@@ -114,6 +117,7 @@
 }
 
 .social-link:hover {
+    cursor:none;
     background-color: var(--secondary);
     -webkit-transition: background-color .2s ease-in-out, color .2s ease-in-out;
     -moz-transition: background-color .2s ease-in-out, color .2s ease-in-out;
@@ -128,6 +132,7 @@
     padding: auto;
     height: 30px;
     margin: 10px;
+    pointer-events: none;
 }
 
 .project-link{
